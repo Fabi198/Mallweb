@@ -55,7 +55,7 @@
                     app:cardCornerRadius="10dp"
                     app:cardElevation="4dp"
                     android:layout_margin="16dp"
-                    android:layout_height="wrap_content"
+                    android:layout_height="60dp"
                     android:layout_weight="25">
 
                     <EditText
@@ -78,20 +78,42 @@
                     app:cardCornerRadius="10dp"
                     app:cardElevation="4dp"
                     android:layout_margin="16dp"
-                    android:layout_height="wrap_content"
+                    android:layout_height="60dp"
                     android:layout_weight="25">
 
-                    <EditText
-                        android:id="@+id/etPass"
+                    <androidx.constraintlayout.widget.ConstraintLayout
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="16dp"
-                        android:autofillHints="password"
-                        android:background="@null"
-                        android:fontFamily="@font/chakra_petch_regular"
-                        android:hint="@string/tu_contrase_a"
-                        android:inputType="textPassword"
-                        tools:ignore="TouchTargetSizeCheck,VisualLintTextFieldSize" />
+                        android:layout_height="match_parent">
+
+                        <EditText
+                            android:id="@+id/etPass"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            android:layout_marginStart="16dp"
+                            android:autofillHints="password"
+                            android:background="@null"
+                            android:fontFamily="@font/chakra_petch_regular"
+                            android:hint="@string/tu_contrase_a"
+                            android:inputType="textPassword"
+                            tools:ignore="TouchTargetSizeCheck,VisualLintTextFieldSize" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            android:layout_marginEnd="8dp"
+                            android:id="@+id/btnSeePass"
+                            android:src="@drawable/baseline_visibility_24"
+                            android:contentDescription="@string/todo" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
 
                 </androidx.cardview.widget.CardView>
 

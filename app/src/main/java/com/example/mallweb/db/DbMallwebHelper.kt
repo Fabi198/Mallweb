@@ -11,7 +11,7 @@ import com.example.mallweb.db.ArrayProvinces.arrayProvinces
 import com.example.mallweb.db.provinces.AllProvinces.arrayAllProvinces
 
 
-open class DbMallwebHelper(var context: Context, DB_NAME: String = "MallwebDB5", DB_VERSION: Int = 3): SQLiteOpenHelper(context, DB_NAME, null, DB_VERSION) {
+open class DbMallwebHelper(var context: Context, DB_NAME: String = "MallwebDB", DB_VERSION: Int = 3): SQLiteOpenHelper(context, DB_NAME, null, DB_VERSION) {
 
     private val createTableClients = "CREATE TABLE IF NOT EXISTS clients (id INTEGER PRIMARY KEY AUTOINCREMENT, email TEXT NOT NULL, name TEXT NOT NULL, birthday TEXT, codarea TEXT, numCelular TEXT, dni TEXT NOT NULL, cuit TEXT NOT NULL, wantABill TEXT NOT NULL, ivaCondition TEXT)"
     private val createTableAddress = "CREATE TABLE IF NOT EXISTS address (idClient INTEGER PRIMARY KEY REFERENCES clients(id), street TEXT NOT NULL, number TEXT NOT NULL, floor TEXT NOT NULL, door TEXT NOT NULL, postalCode TEXT NOT NULL, province TEXT NOT NULL, locality TEXT NOT NULL)"

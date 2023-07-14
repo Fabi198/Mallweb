@@ -4,6 +4,7 @@ import android.app.AlertDialog
 import android.content.Intent
 import android.content.SharedPreferences
 import android.os.Bundle
+import android.text.InputType.*
 import android.util.Log
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
@@ -21,12 +22,14 @@ import com.google.firebase.analytics.FirebaseAnalytics
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.GoogleAuthProvider
 
+
 @Suppress("DEPRECATION")
 class AuthFragment : Fragment(R.layout.fragment_auth) {
 
     private lateinit var binding: FragmentAuthBinding
     private val provider = ProviderType()
     private lateinit var googleClient: GoogleSignInClient
+    private var visiblePass = false
 
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -44,6 +47,19 @@ class AuthFragment : Fragment(R.layout.fragment_auth) {
     }
 
     private fun setup(id2: Int?) {
+
+        binding.btnSeePass.setOnClickListener {
+            if (!visiblePass) {
+                binding.etPass.inputType = TYPE_CLASS_TEXT or TYPE_TEXT_VARIATION_VISIBLE_PASSWORD
+                binding.btnSeePass.setImageResource(R.drawable.baseline_visibility_off_24)
+                visiblePass = true
+            } else {
+                binding.etPass.inputType = TYPE_CLASS_TEXT or TYPE_TEXT_VARIATION_PASSWORD
+                binding.btnSeePass.setImageResource(R.drawable.baseline_visibility_24)
+                visiblePass = false
+            }
+        }
+
         binding.btnReg.setOnClickListener {
             if (id2 != null) {
                 requireActivity()

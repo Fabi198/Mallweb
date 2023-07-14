@@ -280,7 +280,7 @@ class ShoppingCartFragmentStep2 : Fragment(R.layout.fragment_shopping_cart_step2
         val dialog: AlertDialog = builder.create()
         dialog.show()
     }
-    private fun setIVAConditions(): Array<String> { return arrayOf("Seleccione", "Inscripto", "Excento", "Consumidor finál", "Monotributo", "No categorizado") }
+    private fun setIVAConditions(): Array<String> { return arrayOf("Seleccione", "Inscripto", "Excento", "Consumidor final", "Monotributo", "No categorizado") }
     private fun hideKeyboard() { val imm = requireActivity().getSystemService(AppCompatActivity.INPUT_METHOD_SERVICE) as InputMethodManager; imm.hideSoftInputFromWindow(binding.svSCFStep2.windowToken, 0) }
 
 }
