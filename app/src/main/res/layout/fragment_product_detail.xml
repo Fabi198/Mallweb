@@ -1,0 +1,690 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="fragments.ProductDetailFragment">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        app:cardCornerRadius="20dp"
+        android:id="@+id/svMainProductDetail"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        app:cardBackgroundColor="@color/white"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+
+            <ImageButton
+                android:id="@+id/btnFavorites"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_margin="8dp"
+                android:background="@null"
+                android:contentDescription="@string/todo"
+                tools:ignore="DuplicateSpeakableTextCheck,ImageContrastCheck" />
+
+            <ImageView
+                android:id="@+id/ivProductDetail"
+                android:layout_width="200dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="200dp"
+                android:contentDescription="@string/todo"
+                tools:ignore="ImageContrastCheck" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:fontFamily="@font/chakra_petch_regular"
+                android:text="@string/las_im_genes_se_exhiben_con_fines_ilustrativos"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="24dp"
+                android:textSize="24sp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/chakra_petch_bold"
+                android:id="@+id/tvTitleProductDetail"
+                android:layout_height="wrap_content"/>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="16dp"
+                android:layout_height="wrap_content">
+
+
+                <ImageButton
+                    android:layout_width="120dp"
+                    android:background="@null"
+                    android:id="@+id/ivBrand"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:contentDescription="@string/todo"
+                    android:layout_height="60dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:fontFamily="@font/chakra_petch_bold"
+                    android:textSize="20sp"
+                    android:id="@+id/tvBrand"
+                    android:textColor="@color/black"
+                    android:visibility="gone"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_height="wrap_content"/>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    app:cardCornerRadius="10dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:cardBackgroundColor="@color/green"
+                    android:layout_height="wrap_content">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="@string/en_stock"
+                        android:textAllCaps="true"
+                        android:layout_margin="6dp"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/chakra_petch_bold"
+                        android:layout_height="wrap_content"/>
+
+                </androidx.cardview.widget.CardView>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginTop="24dp"
+                android:id="@+id/tvListPrice"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:fontFamily="@font/chakra_petch_regular"
+                android:layout_marginStart="16dp"
+                android:layout_height="wrap_content"/>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="wrap_content"
+                app:cardCornerRadius="10dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginStart="16dp"
+                app:strokeWidth="2dp"
+                app:cardBackgroundColor="@color/white"
+                app:strokeColor="@color/red"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="16dp"
+                        android:fontFamily="@font/chakra_petch_regular"
+                        android:text="@string/precio_nespecial"
+                        android:textAlignment="textEnd"
+                        android:textColor="@color/red"
+                        tools:ignore="RtlCompat,TextContrastCheck" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:textColor="@color/red"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="8dp"
+                        android:textSize="32sp"
+                        android:id="@+id/tvPriceProductDetail"
+                        android:fontFamily="@font/chakra_petch_bold"
+                        android:layout_marginEnd="16dp"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="24dp"
+                android:fontFamily="@font/chakra_petch_medium"
+                android:text="@string/hint_cantidad"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                tools:ignore="TextContrastCheck" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                app:cardCornerRadius="4dp"
+                android:layout_marginEnd="16dp"
+                android:backgroundTint="@color/white"
+                android:layout_marginStart="16dp"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/cantProductDetail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="4dp"
+                    android:background="@null"
+                    android:fontFamily="@font/chakra_petch_medium"
+                    android:importantForAutofill="no"
+                    android:inputType="number"
+                    android:text="@string/_1"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    tools:ignore="LabelFor,SpeakableTextPresentCheck,VisualLintTextFieldSize,TouchTargetSizeCheck" />
+
+            </androidx.cardview.widget.CardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                app:cardCornerRadius="4dp"
+                android:layout_marginTop="24dp"
+                android:id="@+id/btnShop"
+                app:strokeColor="@color/red"
+                app:strokeWidth="2dp"
+                app:cardBackgroundColor="@color/red"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginBottom="12dp"
+                        android:fontFamily="@font/chakra_petch_medium"
+                        android:maxWidth="150dp"
+                        android:text="@string/comprar"
+                        android:textAlignment="center"
+                        android:textAllCaps="true"
+                        android:textColor="@color/white"
+                        app:drawableLeftCompat="@drawable/baseline_shopping_cart_24_white"
+                        tools:ignore="TextContrastCheck" />
+
+                    <ProgressBar
+                        android:layout_width="30dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="4dp"
+                        android:visibility="gone"
+                        android:id="@+id/pbBtnShop"
+                        android:layout_height="30dp"/>
+
+
+                </LinearLayout>
+
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="24dp"
+                android:textColor="@color/black"
+                android:drawablePadding="16dp"
+                android:fontFamily="@font/chakra_petch_regular"
+                android:text="@string/env_os_a_todo_el_pais"
+                app:drawableLeftCompat="@drawable/mallweb_iconos_truck" />
+
+            <TextView
+                android:id="@+id/btnCalculateShipping"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="48dp"
+                android:text="@string/calcular_env_o"
+                android:textColor="@color/teal_700"
+                tools:ignore="TextContrastCheck" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:textColor="@color/black"
+                android:layout_marginTop="16dp"
+                android:drawablePadding="20dp"
+                android:fontFamily="@font/chakra_petch_regular"
+                android:text="@string/retir_en_mallweb"
+                app:drawableLeftCompat="@drawable/mallweb_iconos_markermaps" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="19dp"
+                android:layout_marginTop="16dp"
+                android:textColor="@color/black"
+                android:drawablePadding="17dp"
+                android:fontFamily="@font/chakra_petch_regular"
+                android:text="@string/garant_a_36_meses"
+                app:drawableLeftCompat="@drawable/mallweb_iconos_warranty" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:contentDescription="@string/todo"
+                android:layout_height="2dp"
+                android:background="@color/gray"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:src="@android:drawable/divider_horizontal_bright" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/compartir"
+                    android:textColor="@color/black"
+                    android:layout_height="wrap_content"/>
+
+
+                <ImageButton
+                    android:layout_width="50dp"
+                    android:id="@+id/btnSharedFacebook"
+                    android:layout_marginStart="32dp"
+                    android:background="@null"
+                    android:contentDescription="@string/todo"
+                    android:layout_height="50dp"/>
+
+                <ImageButton
+                    android:layout_width="50dp"
+                    android:id="@+id/btnSharedWhatsapp"
+                    android:layout_marginStart="16dp"
+                    android:background="@null"
+                    android:contentDescription="@string/todo"
+                    android:layout_height="50dp"/>
+
+                <ImageButton
+                    android:layout_width="50dp"
+                    android:background="@null"
+                    android:contentDescription="@string/todo"
+                    android:id="@+id/btnSharedTwitter"
+                    android:layout_marginStart="16dp"
+                    android:layout_height="50dp"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:layout_margin="12dp"
+            android:visibility="gone"
+            android:id="@+id/cvShoppingCardView"
+            app:cardElevation="10dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="10dp"
+            android:layout_height="wrap_content">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageButton
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="@null"
+                    android:id="@+id/btnCloseCV"
+                    android:padding="16dp"
+                    android:src="@drawable/baseline_clear_24_graylight"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="ContentDescription,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:fontFamily="@font/chakra_petch_bold"
+                    android:textColor="@color/black"
+                    android:layout_marginStart="16dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginTop="24dp"
+                    android:id="@+id/tvShopCartTitle"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:text="@string/mi_carrito"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:maxWidth="300dp"
+                    android:fontFamily="@font/chakra_petch_regular"
+                    android:layout_marginTop="24dp"
+                    android:id="@+id/tvDisplayed1"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    android:text="@string/el_producto_fue_agregado_correctamente"
+                    app:layout_constraintTop_toBottomOf="@+id/tvShopCartTitle"
+                    app:layout_constraintStart_toStartOf="@+id/tvShopCartTitle"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:maxWidth="350dp"
+                    android:fontFamily="@font/chakra_petch_semi_bold"
+                    android:textAllCaps="false"
+                    android:id="@+id/tvDisplayed2"
+                    android:textColor="@color/black"
+                    android:text="@string/luego_en_el_carrito_pod_s_agregar_m_s_cantidad"
+                    app:layout_constraintTop_toBottomOf="@+id/tvDisplayed1"
+                    app:layout_constraintStart_toStartOf="@+id/tvShopCartTitle"
+                    android:layout_height="wrap_content"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:id="@+id/llBottons"
+                    android:layout_marginTop="24dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginBottom="16dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvDisplayed2"
+                    android:layout_height="wrap_content">
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        app:cardCornerRadius="4dp"
+                        android:layout_margin="8dp"
+                        android:id="@+id/btnGoToShoppingCartFragment"
+                        app:cardBackgroundColor="@color/red"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="4dp"
+                            android:layout_marginBottom="4dp"
+                            android:layout_marginStart="6dp"
+                            android:layout_marginEnd="6dp"
+                            android:fontFamily="@font/chakra_petch_medium"
+                            android:text="@string/ir_al_carrito"
+                            android:textAlignment="center"
+                            android:textAllCaps="true"
+                            android:textColor="@color/white"
+                            tools:ignore="TextContrastCheck" />
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/btnKeepShopping"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        app:cardBackgroundColor="@color/grayLight"
+                        app:cardCornerRadius="4dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="4dp"
+                            android:layout_marginBottom="4dp"
+                            android:layout_marginStart="6dp"
+                            android:layout_marginEnd="6dp"
+                            android:fontFamily="@font/chakra_petch_medium"
+                            android:text="@string/comprar_m_s"
+                            android:textColor="@color/white"
+                            tools:ignore="TextContrastCheck" />
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:layout_margin="12dp"
+            android:visibility="gone"
+            android:id="@+id/cvShippingCalculator"
+            app:cardElevation="10dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="10dp"
+            android:layout_height="wrap_content">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageButton
+                    android:id="@+id/btnCloseCVShippingCalculator"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="@null"
+                    android:padding="16dp"
+                    android:src="@drawable/baseline_clear_24_graylight"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="ContentDescription,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+
+                <TextView
+                    android:id="@+id/tvShoppingCalcTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="24dp"
+                    android:fontFamily="@font/chakra_petch_bold"
+                    android:text="@string/calcular_costo_de_env_o"
+                    android:textColor="@color/black"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tvDisplayed3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginBottom="8dp"
+                    android:fontFamily="@font/chakra_petch_regular"
+                    android:maxWidth="300dp"
+                    android:text="@string/ingresa_tu_c_digo_postal"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    app:layout_constraintBottom_toTopOf="@id/clDisplayedResult"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvShoppingCalcTitle" />
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/btnCalculatorShipping"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    app:cardBackgroundColor="@color/aquamarina"
+                    app:cardCornerRadius="4dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/clContainer">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="6dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginEnd="6dp"
+                        android:layout_marginBottom="4dp"
+                        android:fontFamily="@font/chakra_petch_medium"
+                        android:text="@string/calcular_env_o_btn"
+                        android:textAlignment="center"
+                        android:textAllCaps="true"
+                        android:textColor="@color/white"
+                        tools:ignore="TextContrastCheck" />
+
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/btnContinue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:visibility="gone"
+                    app:cardBackgroundColor="@color/green"
+                    app:cardCornerRadius="4dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/clDisplayedResult">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="6dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginEnd="6dp"
+                        android:layout_marginBottom="4dp"
+                        android:fontFamily="@font/chakra_petch_medium"
+                        android:text="@string/continuar"
+                        android:textAlignment="center"
+                        android:textAllCaps="true"
+                        android:textColor="@color/white"
+                        tools:ignore="TextContrastCheck" />
+
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/clContainer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toTopOf="@id/btnCalculatorShipping"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvDisplayed3">
+
+                    <EditText
+                        android:id="@+id/tvDisplayed4"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/chakra_petch_semi_bold"
+                        android:hint="@string/ej_1651"
+                        android:inputType="number"
+                        android:importantForAutofill="no"
+                        android:maxWidth="350dp"
+                        android:textAlignment="center"
+                        android:textAllCaps="false"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/grayLight"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/clDisplayedResult"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toTopOf="@id/guideline2"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/guideline">
+                    <LinearLayout
+                        android:id="@id/llDisplayedText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+                        <TextView
+                            android:id="@+id/tvDisplayed5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/chakra_petch_bold"
+                            android:text="@string/gratis"
+                            android:textAllCaps="true"
+                            android:textColor="@color/green"
+                            tools:ignore="TextContrastCheck" />
+                        <ImageButton
+                            android:id="@+id/btnCloseCVShippingCalculator2"
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="2dp"
+                            android:background="@null"
+                            android:padding="16dp"
+                            android:src="@drawable/baseline_clear_24_aquamarina"
+                            tools:ignore="ContentDescription,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+                    </LinearLayout>
+                    <TextView
+                        android:id="@+id/tvDisplayed6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/chakra_petch_bold"
+                        android:text="@string/de_1_a_2_d_as"
+                        android:textAllCaps="true"
+                        android:textColor="@color/green"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/llDisplayedText"
+                        tools:ignore="TextContrastCheck" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintGuide_begin="100dp" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintGuide_begin="190dp" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+        </androidx.cardview.widget.CardView>
+
+
+    </androidx.cardview.widget.CardView>
+
+</ScrollView>

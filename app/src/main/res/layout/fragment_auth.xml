@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".auth.AuthFragment">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ingreso_rapido"
+            android:layout_marginTop="16dp"
+            android:textSize="24sp"
+            android:fontFamily="@font/chakra_petch_medium"
+            android:layout_gravity="center_horizontal"/>
+
+
+        <Button
+            android:id="@+id/btnGoogle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/black"
+            android:fontFamily="@font/chakra_petch_bold"
+            android:layout_margin="16dp"
+            android:drawableLeft="@drawable/google__g__logo"
+            android:text="@string/ingresar_con_google"
+            tools:ignore="RtlHardcoded" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ingreso_manual"
+            android:textSize="24sp"
+            android:fontFamily="@font/chakra_petch_medium"
+            android:layout_gravity="center_horizontal"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="4dp"
+                    android:layout_margin="16dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="25">
+
+                    <EditText
+                        android:id="@+id/etEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="16dp"
+                        android:autofillHints="emailAddress"
+                        android:background="@null"
+                        android:fontFamily="@font/chakra_petch_regular"
+                        android:hint="@string/tu_email"
+                        android:inputType="textEmailAddress"
+                        tools:ignore="TouchTargetSizeCheck,VisualLintTextFieldSize" />
+
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="4dp"
+                    android:layout_margin="16dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="25">
+
+                    <EditText
+                        android:id="@+id/etPass"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="16dp"
+                        android:autofillHints="password"
+                        android:background="@null"
+                        android:fontFamily="@font/chakra_petch_regular"
+                        android:hint="@string/tu_contrase_a"
+                        android:inputType="textPassword"
+                        tools:ignore="TouchTargetSizeCheck,VisualLintTextFieldSize" />
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="@string/perdiste_tu_contrase_a"
+                android:id="@+id/btnLostPassword"
+                android:fontFamily="@font/chakra_petch_regular"
+                android:layout_gravity="end"
+                android:layout_marginEnd="16dp"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="24dp"
+            android:text="@string/ingresar"
+            android:fontFamily="@font/chakra_petch_bold"
+            android:backgroundTint="@color/red"
+            android:id="@+id/btnBasic"
+            android:layout_gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="24dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="@string/no_ten_s_cuenta"
+            android:fontFamily="@font/chakra_petch_regular"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="@string/registrarme"
+            android:id="@+id/btnReg"
+            android:backgroundTint="@color/redDark"
+            android:fontFamily="@font/chakra_petch_bold"
+            android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>

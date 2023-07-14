@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="fragments.MyFavorites">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="8dp"
+        android:layout_height="wrap_content">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_margin="8dp"
+            android:id="@+id/rvFavorites"
+            tools:listitem="@layout/item_mallweb_products_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/chakra_petch_bold"
+            android:textSize="18sp"
+            android:visibility="gone"
+            android:id="@+id/tvNoFavorites"
+            android:textColor="@color/red"/>
+
+    </LinearLayout>
+
+
+
+</ScrollView>

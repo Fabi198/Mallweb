@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="fragmentsDrawerMenu.PromosFragment">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:src="@drawable/mallweb_banner_promo_seagate"
+        android:id="@+id/banner1"
+        android:contentDescription="@string/todo"
+        android:visibility="invisible"
+        android:layout_weight="25" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:src="@drawable/mallweb_banner_promo_intel"
+        android:id="@+id/banner2"
+        android:contentDescription="@string/todo"
+        android:visibility="invisible"
+        android:layout_weight="25" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/banner3"
+        android:contentDescription="@string/todo"
+        android:visibility="invisible"
+        android:src="@drawable/mallweb_banner_promo_envio_gratis"
+        android:layout_weight="25" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/banner4"
+        android:contentDescription="@string/todo"
+        android:visibility="invisible"
+        android:src="@drawable/mallweb_banner_promo_ahora12"
+        android:layout_weight="25" />
+
+</LinearLayout>

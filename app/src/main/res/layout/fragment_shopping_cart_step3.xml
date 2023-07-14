@@ -1,0 +1,636 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/svSCFStep3"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="fragmentsDrawerMenu.ShoppingCartFragmentStep3">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvTitleStep3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:fontFamily="@font/chakra_petch_medium"
+            android:text="@string/checkout"
+            android:textAllCaps="true"
+            android:textColor="#FF0000"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/svAdviceShoppingCartStep3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="20dp"
+            app:layout_constraintBottom_toTopOf="@+id/cvOrder"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvTitleStep3">
+
+            <TextView
+                android:id="@+id/tvTest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="4dp"
+                android:drawablePadding="16dp"
+                android:fontFamily="@font/chakra_petch_regular"
+                android:maxWidth="300dp"
+                android:text="@string/elegi_la_forma_de_pago_que_prefieras"
+                android:textColor="@color/black"
+                app:drawableLeftCompat="@drawable/mallweb_shopcart_step3" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cvOrder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="24dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/svAdviceShoppingCartStep3">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="24dp">
+
+                <TextView
+                    android:id="@+id/cvOrderTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="@font/chakra_petch_bold"
+                    android:text="@string/order_39549"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/cvOrderSubtotal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="24dp"
+                    android:fontFamily="@font/chakra_petch_semi_bold"
+                    android:text="@string/subtotal"
+                    android:textColor="@color/black"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/cvOrderTitle" />
+
+                <TextView
+                    android:id="@+id/cvOrderSubtotalDisplayed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp"
+                    android:fontFamily="@font/chakra_petch_semi_bold"
+                    android:textColor="@color/black"
+                    app:layout_constraintBottom_toBottomOf="@id/cvOrderSubtotal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/cvOrderSubtotal" />
+
+                <TextView
+                    android:id="@+id/cvOrderShippingCost"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="24dp"
+                    android:fontFamily="@font/chakra_petch_semi_bold"
+                    android:text="@string/costo_de_env_o"
+                    android:textColor="@color/black"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/cvOrderSubtotal" />
+
+                <TextView
+                    android:id="@+id/cvOrderShippingCostDisplayed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp"
+                    android:fontFamily="@font/chakra_petch_semi_bold"
+                    android:text="@string/gratis_"
+                    android:textColor="@color/greenLight"
+                    app:layout_constraintBottom_toBottomOf="@id/cvOrderShippingCost"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/cvOrderShippingCost" />
+
+                <LinearLayout
+                    android:id="@+id/llPaymentPlans"
+                    android:layout_width="match_parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginTop="24dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/cvOrderShippingCost"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/cvOrderPaymentPlan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginEnd="16dp"
+                        android:backgroundTint="@color/white"
+                        app:cardCornerRadius="8dp"
+                        app:cardElevation="4dp"
+                        app:strokeColor="@color/blue"
+                        app:strokeWidth="2dp">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:drawablePadding="4dp"
+                                android:fontFamily="@font/chakra_petch_semi_bold"
+                                android:text="@string/pagar_con_los_planes_ahora"
+                                android:textAllCaps="true"
+                                android:textColor="@color/ahora12"
+                                app:drawableLeftCompat="@drawable/a12"
+                                app:layout_constraintBottom_toBottomOf="@id/btnSeePaymentPlan"
+                                app:layout_constraintEnd_toStartOf="@id/btnSeePaymentPlan"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="@id/btnSeePaymentPlan" />
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/btnSeePaymentPlan"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:backgroundTint="@color/blue"
+                                app:cardCornerRadius="8dp"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintTop_toTopOf="parent">
+
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="8dp"
+                                    android:layout_marginTop="4dp"
+                                    android:layout_marginEnd="8dp"
+                                    android:layout_marginBottom="4dp"
+                                    android:fontFamily="@font/chakra_petch_semi_bold"
+                                    android:text="@string/ver_planes"
+                                    android:textAllCaps="true"
+                                    android:textColor="@color/white" />
+
+                            </androidx.cardview.widget.CardView>
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/cvPaymentCardPlan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginBottom="16dp"
+                        android:backgroundTint="@color/white"
+                        android:visibility="gone"
+                        app:cardCornerRadius="10dp"
+                        app:layout_constraintTop_toBottomOf="@id/cvOrderPaymentPlan">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/cvPaymentCardPlanTitle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="16dp"
+                                android:fontFamily="@font/chakra_petch_medium"
+                                android:text="@string/formas_de_pago"
+                                android:textColor="@color/black"
+                                android:textSize="20sp"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <ImageButton
+                                android:id="@+id/btnCloseCV"
+                                android:layout_width="10dp"
+                                android:layout_height="10dp"
+                                android:layout_marginTop="16dp"
+                                android:layout_marginEnd="16dp"
+                                android:background="@null"
+                                android:padding="16dp"
+                                android:src="@drawable/baseline_clear_24_graylight"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                tools:ignore="ContentDescription,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/cvCabal"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="16dp"
+                                android:layout_marginTop="32dp"
+                                android:layout_marginEnd="16dp"
+                                app:cardBackgroundColor="@color/fafafa"
+                                app:cardCornerRadius="30dp"
+                                app:layout_constraintTop_toBottomOf="@id/cvPaymentCardPlanTitle">
+
+                                <androidx.constraintlayout.widget.ConstraintLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <com.google.android.material.imageview.ShapeableImageView
+                                        android:id="@+id/ivCabal"
+                                        android:layout_width="50dp"
+                                        android:layout_height="50dp"
+                                        android:layout_margin="8dp"
+                                        android:padding="4dp"
+                                        app:layout_constraintStart_toStartOf="parent"
+                                        app:layout_constraintTop_toTopOf="parent"
+                                        app:shapeAppearanceOverlay="@style/roundedImageView"
+                                        app:srcCompat="@drawable/card_cabal"
+                                        app:strokeColor="@color/white"
+                                        app:strokeWidth="3dp"
+                                        tools:ignore="TooDeepLayout" />
+
+                                    <TextView
+                                        android:id="@+id/tvCabal"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="16dp"
+                                        android:fontFamily="@font/chakra_petch_bold"
+                                        android:text="@string/cabal"
+                                        android:textColor="@color/black"
+                                        app:layout_constraintBottom_toBottomOf="@id/ivCabal"
+                                        app:layout_constraintStart_toEndOf="@id/ivCabal"
+                                        app:layout_constraintTop_toTopOf="@id/ivCabal" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginBottom="24dp"
+                                        android:maxWidth="270dp"
+                                        android:id="@+id/tvCabalDisplayed"
+                                        android:textColor="@color/black"
+                                        app:layout_constraintBottom_toBottomOf="parent"
+                                        app:layout_constraintStart_toStartOf="@id/tvCabal"
+                                        app:layout_constraintTop_toBottomOf="@id/tvCabal" />
+
+
+                                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/cvVisa"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="16dp"
+                                android:layout_marginTop="32dp"
+                                android:layout_marginEnd="16dp"
+                                app:cardBackgroundColor="@color/fafafa"
+                                app:cardCornerRadius="30dp"
+                                app:layout_constraintTop_toBottomOf="@id/cvCabal">
+
+                                <androidx.constraintlayout.widget.ConstraintLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <com.google.android.material.imageview.ShapeableImageView
+                                        android:id="@+id/ivVisa"
+                                        android:layout_width="50dp"
+                                        android:layout_height="50dp"
+                                        android:layout_margin="8dp"
+                                        android:padding="4dp"
+                                        app:layout_constraintStart_toStartOf="parent"
+                                        app:layout_constraintTop_toTopOf="parent"
+                                        app:shapeAppearanceOverlay="@style/roundedImageView"
+                                        app:srcCompat="@drawable/card_visa"
+                                        app:strokeColor="@color/white"
+                                        app:strokeWidth="3dp" />
+
+                                    <TextView
+                                        android:id="@+id/tvVisa"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="16dp"
+                                        android:fontFamily="@font/chakra_petch_bold"
+                                        android:text="@string/visa"
+                                        android:textColor="@color/black"
+                                        app:layout_constraintBottom_toBottomOf="@id/ivVisa"
+                                        app:layout_constraintStart_toEndOf="@id/ivVisa"
+                                        app:layout_constraintTop_toTopOf="@id/ivVisa" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginBottom="24dp"
+                                        android:maxWidth="270dp"
+                                        android:id="@+id/tvVisaDisplayed"
+                                        android:textColor="@color/black"
+                                        app:layout_constraintBottom_toBottomOf="parent"
+                                        app:layout_constraintStart_toStartOf="@id/tvVisa"
+                                        app:layout_constraintTop_toBottomOf="@id/tvVisa" />
+
+
+                                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/cvMaster"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="16dp"
+                                android:layout_marginTop="32dp"
+                                android:layout_marginEnd="16dp"
+                                android:layout_marginBottom="24dp"
+                                app:cardBackgroundColor="@color/fafafa"
+                                app:cardCornerRadius="30dp"
+                                app:layout_constraintBottom_toTopOf="@id/btnCloseCV2"
+                                app:layout_constraintTop_toBottomOf="@id/cvVisa">
+
+                                <androidx.constraintlayout.widget.ConstraintLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <com.google.android.material.imageview.ShapeableImageView
+                                        android:id="@+id/ivMaster"
+                                        android:layout_width="50dp"
+                                        android:layout_height="50dp"
+                                        android:layout_margin="8dp"
+                                        android:padding="4dp"
+                                        app:layout_constraintStart_toStartOf="parent"
+                                        app:layout_constraintTop_toTopOf="parent"
+                                        app:shapeAppearanceOverlay="@style/roundedImageView"
+                                        app:srcCompat="@drawable/card_mastercard"
+                                        app:strokeColor="@color/white"
+                                        app:strokeWidth="3dp" />
+
+                                    <TextView
+                                        android:id="@+id/tvMaster"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="16dp"
+                                        android:fontFamily="@font/chakra_petch_bold"
+                                        android:text="@string/master_card"
+                                        android:textColor="@color/black"
+                                        app:layout_constraintBottom_toBottomOf="@id/ivMaster"
+                                        app:layout_constraintStart_toEndOf="@id/ivMaster"
+                                        app:layout_constraintTop_toTopOf="@id/ivMaster" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginBottom="24dp"
+                                        android:maxWidth="270dp"
+                                        android:id="@+id/tvMasterDisplayed"
+                                        android:textColor="@color/black"
+                                        app:layout_constraintBottom_toBottomOf="parent"
+                                        app:layout_constraintStart_toStartOf="@id/tvMaster"
+                                        app:layout_constraintTop_toBottomOf="@id/tvMaster" />
+
+
+                                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                            </androidx.cardview.widget.CardView>
+
+                            <Button
+                                android:id="@+id/btnCloseCV2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="16dp"
+                                android:backgroundTint="@color/grayLight"
+                                android:text="@string/cerrar"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent" />
+
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    </com.google.android.material.card.MaterialCardView>
+
+                </LinearLayout>
+
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/cvMercadoPagoPayment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:backgroundTint="@color/blue"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="4dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/llPaymentPlans"
+                    app:strokeColor="@color/blue"
+                    app:strokeWidth="2dp">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="4dp"
+                            android:layout_marginBottom="4dp"
+                            android:fontFamily="@font/chakra_petch_semi_bold"
+                            android:maxWidth="110dp"
+                            android:text="@string/pagar_con_mercado_pago"
+                            android:textAllCaps="true"
+                            android:textColor="@color/white"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/cvMercadoPagoPaymentTotalDisplayed"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="16dp"
+                            android:fontFamily="@font/chakra_petch_bold"
+                            android:textAllCaps="true"
+                            android:textColor="@color/white"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                </com.google.android.material.card.MaterialCardView>
+
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/cvTransferPayment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="24dp"
+                    android:backgroundTint="@color/white"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="4dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/cvMercadoPagoPayment"
+                    app:strokeColor="@color/black"
+                    app:strokeWidth="1dp">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/cvTransferPaymentTotal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="4dp"
+                            android:fontFamily="@font/chakra_petch_regular"
+                            android:text="@string/pagar_con"
+                            android:textAllCaps="true"
+                            android:textColor="@color/black"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/cvTransferPaymentTotal"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/cvTransferPaymentTotal2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginBottom="4dp"
+                            android:fontFamily="@font/chakra_petch_semi_bold"
+                            android:text="@string/transferencia"
+                            android:textAllCaps="true"
+                            android:textColor="@color/black"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/cvTransferPaymentTotal" />
+
+                        <TextView
+                            android:id="@+id/cvTransferPaymentTotalDisplayed"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="16dp"
+                            android:fontFamily="@font/chakra_petch_bold"
+                            android:textAllCaps="true"
+                            android:textColor="@color/black"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/cvCashAtLocalPayment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="24dp"
+                    android:backgroundTint="@color/white"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="4dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/cvTransferPayment"
+                    app:strokeColor="@color/black"
+                    app:strokeWidth="1dp">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/cvCashAtLocalPaymentTotal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="4dp"
+                            android:fontFamily="@font/chakra_petch_regular"
+                            android:text="@string/pagar_en_efectivo"
+                            android:textAllCaps="true"
+                            android:textColor="@color/black"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/cvCashAtLocalPaymentTotal"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/cvCashAtLocalPaymentTotal2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginBottom="4dp"
+                            android:fontFamily="@font/chakra_petch_semi_bold"
+                            android:text="@string/en_sucursal"
+                            android:textAllCaps="true"
+                            android:textColor="@color/black"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/cvCashAtLocalPaymentTotal" />
+
+                        <TextView
+                            android:id="@+id/cvCashAtLocalPaymentTotalDisplayed"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="16dp"
+                            android:fontFamily="@font/chakra_petch_bold"
+                            android:textAllCaps="true"
+                            android:textColor="@color/black"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                </com.google.android.material.card.MaterialCardView>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</ScrollView>

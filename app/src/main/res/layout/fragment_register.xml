@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context="auth.RegisterFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/chakra_petch_medium"
+            android:textColor="#FF0000"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/registro_manual"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/etName"
+            android:layout_marginTop="16dp"
+            android:hint="@string/nombre"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:textAllCaps="false"
+            android:fontFamily="@font/chakra_petch_medium"
+            android:autofillHints="text"
+            android:inputType="textPersonName"
+            tools:ignore="LabelFor,VisualLintTextFieldSize" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/etDNI"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:textAllCaps="false"
+            android:hint="@string/d_n_i"
+            android:fontFamily="@font/chakra_petch_medium"
+            android:autofillHints="number"
+            android:inputType="number"
+            tools:ignore="LabelFor,VisualLintTextFieldSize" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/etCUIT"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:textAllCaps="false"
+            android:hint="@string/c_u_i_t"
+            android:fontFamily="@font/chakra_petch_medium"
+            android:autofillHints="number"
+            android:inputType="number"
+            tools:ignore="LabelFor,VisualLintTextFieldSize" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/etEmail"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:textAllCaps="false"
+            android:hint="@string/email"
+            android:fontFamily="@font/chakra_petch_medium"
+            android:autofillHints="emailAddress"
+            android:inputType="textEmailAddress"
+            tools:ignore="LabelFor,VisualLintTextFieldSize" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/etPass"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:textAllCaps="false"
+            android:fontFamily="@font/chakra_petch_medium"
+            android:autofillHints="password"
+            android:hint="@string/tu_contrase_a"
+            android:inputType="textPassword"
+            tools:ignore="LabelFor,VisualLintTextFieldSize" />
+
+
+        <Button
+            android:id="@+id/btnReg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="@color/red"
+            android:text="@string/registrarme"
+            tools:ignore="TextContrastCheck" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="24dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="@string/ya_ten_s_cuenta"
+                android:fontFamily="@font/chakra_petch_regular"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/ingresar"
+                android:id="@+id/btnBack"
+                android:backgroundTint="@color/redDark"
+                android:fontFamily="@font/chakra_petch_bold"
+                android:layout_height="wrap_content"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

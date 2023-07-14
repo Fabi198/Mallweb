@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/item_home"
+        android:title="@string/inicio"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/item_categories"
+        android:title="@string/categorias"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/item_shop_container"
+        android:title="@string/carrito_de_compras"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/item_your_orders"
+        android:title="@string/tus_pedidos"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/item_personal_data"
+        android:title="@string/datos_personales"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/item_who_are_we"
+        android:title="@string/quienes_somos"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/item_faq"
+        android:title="@string/preguntas_frecuentes"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/item_deliver_method"
+        android:title="@string/m_todos_de_entrega"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/item_payment_method"
+        android:title="@string/datos_bancarios"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/item_contact"
+        android:title="@string/contacto"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/item_close_mallweb_session"
+        android:title="@string/cerrar_sesion"
+        app:showAsAction="never"
+        android:visible="false"/>
+
+</menu>

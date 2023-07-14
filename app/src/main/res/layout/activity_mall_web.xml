@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/dlMallweb"
+    android:layout_height="wrap_content"
+    tools:context=".MallWeb">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_height="64dp"
+            android:background="@drawable/mallweb_banner_toolbar"
+            android:id="@+id/toolbarMallwebHome">
+
+
+            <ImageView
+                android:id="@+id/ivToolbarMallwebHome"
+                android:layout_width="100dp"
+                android:layout_height="64dp"
+                android:layout_gravity="center_horizontal"
+                android:contentDescription="@string/todo"
+                tools:ignore="ImageContrastCheck"
+                tools:layout_editor_absoluteX="155dp" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_gravity="end"
+                android:layout_height="wrap_content">
+
+                <ImageButton
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:id="@+id/btnShoppingCartToolbar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:contentDescription="@string/todo"
+                    android:padding="20dp"
+                    android:src="@drawable/baseline_shopping_cart_24_white"
+                    tools:ignore="DuplicateSpeakableTextCheck,ImageContrastCheck"
+                    tools:layout_editor_absoluteX="347dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="19dp"
+                    app:layout_constraintTop_toTopOf="@id/btnShoppingCartToolbar"
+                    app:layout_constraintStart_toStartOf="@id/btnShoppingCartToolbar"
+                    app:layout_constraintEnd_toEndOf="@id/btnShoppingCartToolbar"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:id="@+id/tvCantShoppingCart"
+                    android:textSize="10dp"
+                    android:text=""
+                    android:fontFamily="@font/chakra_petch_bold"
+                    tools:ignore="SpUsage" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:padding="20dp"
+                android:id="@+id/btnMyAccount"
+                android:background="@null"
+                android:visibility="gone"
+                android:contentDescription="@string/todo"
+                android:src="@drawable/baseline_person_24_white"/>
+
+
+        </androidx.appcompat.widget.Toolbar>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:orientation="horizontal"
+                android:id="@+id/cvSearch"
+                app:layout_constraintTop_toBottomOf="@+id/toolbarMallwebHome"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content">
+
+
+                <EditText
+                    android:layout_width="300dp"
+                    android:id="@+id/etSearch"
+                    android:importantForAutofill="no"
+                    android:imeOptions="actionDone"
+                    android:fontFamily="@font/chakra_petch_regular"
+                    android:hint="@string/que_est_s_buscando"
+                    android:layout_height="wrap_content"
+                    android:inputType="text" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:padding="12dp"
+                    android:contentDescription="@string/todo"
+                    android:background="@null"
+                    android:id="@+id/btnSearch"
+                    android:src="@drawable/baseline_search_24"
+                    android:layout_height="wrap_content"/>
+
+
+            </LinearLayout>
+
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvBottomToolbar"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cvSearch"
+            android:layout_marginTop="12dp"
+            android:textAllCaps="false"
+            android:textSize="22sp"
+            android:text="@string/encontr_todo_lo_que_estas_buscando"
+            android:fontFamily="@font/chakra_petch_regular"
+            android:textAlignment="center"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:id="@+id/lltvBottomToolbar"
+            app:layout_constraintTop_toBottomOf="@+id/tvBottomToolbar"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="en "
+                android:textSize="22sp"
+                android:textAllCaps="false"
+                android:fontFamily="@font/chakra_petch_regular"
+                android:layout_height="wrap_content"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tecnologia"
+                android:textSize="22sp"
+                android:fontFamily="@font/chakra_petch_bold"
+                android:textAllCaps="false"/>
+
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            app:layout_constraintTop_toBottomOf="@+id/lltvBottomToolbar"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="12dp"
+            android:orientation="horizontal"
+            android:layout_marginEnd="12dp"
+            android:id="@+id/rvRoundBottoms"
+            tools:listitem="@layout/item_mallweb_round_bottoms"
+            android:layout_height="wrap_content"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/rvBanners"
+            android:clipToPadding="false"
+            android:paddingBottom="320dp"
+            tools:listitem="@layout/item_mallweb_banners"
+            app:layout_constraintTop_toBottomOf="@+id/rvRoundBottoms"
+            android:layout_marginTop="20dp"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="64dp"
+            android:visibility="gone"
+            android:id="@+id/mallweb_home_container"
+            android:layout_height="match_parent"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_gravity="start"
+        android:id="@+id/nv_lateral_mallweb"
+        app:menu="@menu/mallweb_home"
+        app:itemTextAppearance="@style/NavigationViewTextAppearance"
+        style="@style/NavigationViewStyle"
+        app:headerLayout="@layout/mallweb_nav_header"
+        android:layout_height="match_parent"
+        tools:ignore="VisualLintBounds" />
+
+</androidx.drawerlayout.widget.DrawerLayout>

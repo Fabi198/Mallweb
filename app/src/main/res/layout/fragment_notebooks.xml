@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="fragmentsSubAllCategories.NotebooksFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="8dp"
+        android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:layout_marginStart="32dp"
+        android:fontFamily="@font/chakra_petch_medium"
+        android:textColor="#FF0000"
+        android:textAllCaps="true"
+        android:text="@string/notebooks"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="32dp"
+        android:textAllCaps="true"
+        android:fontFamily="@font/chakra_petch_semi_bold"
+        android:text="@string/notebooks"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:background="@color/gray"
+            android:contentDescription="@string/todo"
+            android:src="@android:drawable/divider_horizontal_bright"
+            tools:ignore="ImageContrastCheck" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="48dp"
+        android:textAllCaps="false"
+        android:id="@+id/btnNotebooks"
+        android:fontFamily="@font/chakra_petch_medium"
+        android:text="@string/notebooks"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:background="@color/gray"
+            android:contentDescription="@string/todo"
+            android:src="@android:drawable/divider_horizontal_bright"
+            tools:ignore="ImageContrastCheck" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="48dp"
+        android:textAllCaps="false"
+        android:id="@+id/btnRepuestos"
+        android:fontFamily="@font/chakra_petch_medium"
+        android:text="@string/repuestos"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:background="@color/gray"
+            android:contentDescription="@string/todo"
+            android:src="@android:drawable/divider_horizontal_bright"
+            tools:ignore="ImageContrastCheck" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="48dp"
+        android:textAllCaps="false"
+        android:id="@+id/btnBaterias"
+        android:fontFamily="@font/chakra_petch_medium"
+        android:text="@string/baterias"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:background="@color/gray"
+            android:contentDescription="@string/todo"
+            android:src="@android:drawable/divider_horizontal_bright"
+            tools:ignore="ImageContrastCheck" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="48dp"
+        android:textAllCaps="false"
+        android:id="@+id/btnBaseNotebooks"
+        android:fontFamily="@font/chakra_petch_medium"
+        android:text="@string/base_para_notebook"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:background="@color/gray"
+            android:contentDescription="@string/todo"
+            android:src="@android:drawable/divider_horizontal_bright"
+            tools:ignore="ImageContrastCheck" />
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,686 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/svMyPersonalData"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.MyPersonalData">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        app:cardCornerRadius="10dp"
+        android:id="@+id/cvMyDataDisplayed"
+        android:layout_marginStart="8dp"
+        android:backgroundTint="@color/white"
+        android:layout_marginEnd="8dp"
+        app:cardElevation="10dp"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="8dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:layout_marginTop="24dp"
+                android:layout_marginStart="32dp"
+                android:textAllCaps="true"
+                android:fontFamily="@font/chakra_petch_semi_bold"
+                android:text="@string/datos_personales"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:layout_marginStart="32dp"
+                android:fontFamily="@font/chakra_petch_medium"
+                android:text="@string/id_cliente"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                app:cardCornerRadius="4dp"
+                android:layout_marginEnd="32dp"
+                android:backgroundTint="@color/graySuperLight"
+                android:layout_marginStart="32dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:textAllCaps="false"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginStart="8dp"
+                    android:id="@+id/idclient"
+                    android:fontFamily="@font/chakra_petch_medium"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:layout_marginStart="32dp"
+                android:fontFamily="@font/chakra_petch_medium"
+                android:text="@string/hint_email"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                app:cardCornerRadius="4dp"
+                android:layout_marginEnd="32dp"
+                android:backgroundTint="@color/graySuperLight"
+                android:layout_marginStart="32dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:text=""
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginStart="8dp"
+                    android:id="@+id/emailClient"
+                    android:fontFamily="@font/chakra_petch_medium"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:layout_marginStart="32dp"
+                android:fontFamily="@font/chakra_petch_medium"
+                android:text="@string/hint_nombre"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                app:cardCornerRadius="4dp"
+                android:layout_marginEnd="32dp"
+                android:backgroundTint="@color/white"
+                android:layout_marginStart="32dp"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/nameClient"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:fontFamily="@font/chakra_petch_medium"
+                    android:importantForAutofill="no"
+                    android:inputType="textPersonName"
+                    android:text=""
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    tools:ignore="LabelFor,SpeakableTextPresentCheck,VisualLintTextFieldSize" />
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:layout_marginStart="32dp"
+                android:fontFamily="@font/chakra_petch_medium"
+                android:text="@string/hint_birth"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                app:cardCornerRadius="4dp"
+                android:layout_marginEnd="32dp"
+                android:backgroundTint="@color/white"
+                android:layout_marginStart="32dp"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/dateBirthClient"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:fontFamily="@font/chakra_petch_medium"
+                    android:importantForAutofill="no"
+                    android:text=""
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    tools:ignore="LabelFor,TextFields,VisualLintTextFieldSize,SpeakableTextPresentCheck" />
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:layout_marginStart="32dp"
+                android:fontFamily="@font/chakra_petch_bold"
+                android:text="@string/tel_fono"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:layout_marginStart="32dp"
+                android:fontFamily="@font/chakra_petch_medium"
+                android:text="@string/cod_area"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                app:cardCornerRadius="4dp"
+                android:layout_marginEnd="32dp"
+                android:backgroundTint="@color/white"
+                android:layout_marginStart="32dp"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/codAreaNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:fontFamily="@font/chakra_petch_medium"
+                    android:importantForAutofill="no"
+                    android:inputType="number"
+                    android:text=""
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    tools:ignore="LabelFor,VisualLintTextFieldSize,SpeakableTextPresentCheck" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                app:cardCornerRadius="4dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="@color/white"
+                android:layout_marginStart="32dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:textAllCaps="false"
+                    android:text="@string/_15"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="8dp"
+                    android:id="@+id/tvFirstNumberCellphoneMallwebClient"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginStart="8dp"
+                    android:fontFamily="@font/chakra_petch_bold"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:layout_marginStart="32dp"
+                android:fontFamily="@font/chakra_petch_medium"
+                android:text="@string/n_mero"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                app:cardCornerRadius="4dp"
+                android:layout_marginEnd="32dp"
+                android:backgroundTint="@color/white"
+                android:layout_marginStart="32dp"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/numberCellphoneMallwebClient"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:fontFamily="@font/chakra_petch_medium"
+                    android:importantForAutofill="no"
+                    android:inputType="number"
+                    android:text=""
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    tools:ignore="LabelFor,VisualLintTextFieldSize,SpeakableTextPresentCheck" />
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:layout_marginStart="32dp"
+                android:fontFamily="@font/chakra_petch_medium"
+                android:text="@string/hint_d_n_i"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                app:cardCornerRadius="4dp"
+                android:layout_marginEnd="32dp"
+                android:backgroundTint="@color/white"
+                android:layout_marginStart="32dp"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:textAllCaps="false"
+                    android:text=""
+                    android:inputType="number"
+                    android:textColor="@color/black"
+                    android:layout_marginStart="8dp"
+                    android:id="@+id/dniClientMallweb"
+                    android:fontFamily="@font/chakra_petch_medium"
+                    android:importantForAutofill="no"
+                    tools:ignore="LabelFor,VisualLintTextFieldSize" />
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:layout_marginStart="32dp"
+                android:fontFamily="@font/chakra_petch_medium"
+                android:text="@string/hint_c_u_i_t"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                app:cardCornerRadius="4dp"
+                android:layout_marginEnd="32dp"
+                android:backgroundTint="@color/white"
+                android:layout_marginStart="32dp"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:textAllCaps="false"
+                    android:text=""
+                    android:inputType="number"
+                    android:textColor="@color/black"
+                    android:layout_marginStart="8dp"
+                    android:id="@+id/cuitClientMallweb"
+                    android:fontFamily="@font/chakra_petch_medium"
+                    android:importantForAutofill="no"
+                    tools:ignore="LabelFor,VisualLintTextFieldSize" />
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:layout_marginStart="32dp"
+                android:fontFamily="@font/chakra_petch_medium"
+                android:text="@string/quiero_factura_a"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                app:cardCornerRadius="4dp"
+                android:layout_marginEnd="32dp"
+                android:backgroundTint="@color/white"
+                android:layout_marginStart="32dp"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:textAllCaps="false"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:layout_marginStart="8dp"
+                    android:id="@+id/wantABillClientMallweb"
+                    android:fontFamily="@font/chakra_petch_medium"
+                    android:importantForAutofill="no"
+                    tools:ignore="LabelFor,TextFields,VisualLintTextFieldSize" />
+
+            </androidx.cardview.widget.CardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="200dp"
+                app:cardCornerRadius="8dp"
+                android:id="@+id/btnActProfile"
+                app:strokeColor="@color/red"
+                app:strokeWidth="2dp"
+                android:layout_marginTop="16dp"
+                android:layout_gravity="center_horizontal"
+                app:cardBackgroundColor="@color/red"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/chakra_petch_medium"
+                    android:text="@string/actualizar_perfil"
+                    android:textAlignment="center"
+                    android:maxWidth="180dp"
+                    android:layout_gravity="center"
+                    android:textAllCaps="true"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:textColor="@color/white"
+                    app:drawableLeftCompat="@drawable/baseline_check_24" />
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:layout_marginTop="24dp"
+                android:layout_marginStart="32dp"
+                android:textAllCaps="true"
+                android:fontFamily="@font/chakra_petch_semi_bold"
+                android:text="@string/direcci_n_de_env_o"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/red"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="32dp"
+                android:textAllCaps="false"
+                android:fontFamily="@font/chakra_petch_regular"
+                android:text="@string/la_direcci_n_de_env_o_s_lo_podr_s_modificarla_en_el_momento_de_realizar_el_pedido"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:layout_marginStart="32dp"
+                android:fontFamily="@font/chakra_petch_medium"
+                android:text="@string/hint_calle"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                app:cardCornerRadius="4dp"
+                android:layout_marginEnd="32dp"
+                android:backgroundTint="@color/graySuperLight"
+                android:layout_marginStart="32dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:textAllCaps="false"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginStart="8dp"
+                    android:id="@+id/streetShippingClientMallweb"
+                    android:fontFamily="@font/chakra_petch_medium"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:layout_marginStart="32dp"
+                android:fontFamily="@font/chakra_petch_medium"
+                android:text="@string/hint_altura"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                app:cardCornerRadius="4dp"
+                android:layout_marginEnd="32dp"
+                android:backgroundTint="@color/graySuperLight"
+                android:layout_marginStart="32dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:text=""
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginStart="8dp"
+                    android:id="@+id/heightShippingClientMallweb"
+                    android:fontFamily="@font/chakra_petch_medium"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:layout_marginStart="32dp"
+                android:fontFamily="@font/chakra_petch_medium"
+                android:text="@string/hint_piso"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                app:cardCornerRadius="4dp"
+                android:layout_marginEnd="32dp"
+                android:backgroundTint="@color/graySuperLight"
+                android:layout_marginStart="32dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:textAllCaps="false"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginStart="8dp"
+                    android:id="@+id/floorShippingClientMallweb"
+                    android:fontFamily="@font/chakra_petch_medium"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:layout_marginStart="32dp"
+                android:fontFamily="@font/chakra_petch_medium"
+                android:text="@string/hint_puerta"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                app:cardCornerRadius="4dp"
+                android:layout_marginEnd="32dp"
+                android:backgroundTint="@color/graySuperLight"
+                android:layout_marginStart="32dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:text=""
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginStart="8dp"
+                    android:id="@+id/doorShippingClientMallweb"
+                    android:fontFamily="@font/chakra_petch_medium"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:layout_marginStart="32dp"
+                android:fontFamily="@font/chakra_petch_medium"
+                android:text="@string/hint_cod_postal"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                app:cardCornerRadius="4dp"
+                android:layout_marginEnd="32dp"
+                android:backgroundTint="@color/graySuperLight"
+                android:layout_marginStart="32dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:textAllCaps="false"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginStart="8dp"
+                    android:id="@+id/postalCodeShippingClientMallweb"
+                    android:fontFamily="@font/chakra_petch_medium"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:layout_marginStart="32dp"
+                android:fontFamily="@font/chakra_petch_medium"
+                android:text="@string/hint_provincia"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                app:cardCornerRadius="4dp"
+                android:layout_marginEnd="32dp"
+                android:backgroundTint="@color/graySuperLight"
+                android:layout_marginStart="32dp"
+                android:layout_height="wrap_content"
+                tools:ignore="TooManyViews">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:text=""
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginStart="8dp"
+                    android:id="@+id/provinceShippingClientMallweb"
+                    android:fontFamily="@font/chakra_petch_medium"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:layout_marginStart="32dp"
+                android:fontFamily="@font/chakra_petch_medium"
+                android:text="@string/hint_localidad"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                app:cardCornerRadius="4dp"
+                android:layout_marginBottom="32dp"
+                android:layout_marginEnd="32dp"
+                android:backgroundTint="@color/graySuperLight"
+                android:layout_marginStart="32dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:textAllCaps="false"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginStart="8dp"
+                    android:id="@+id/localityShippingClientMallweb"
+                    android:fontFamily="@font/chakra_petch_medium"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="200dp"
+                app:cardCornerRadius="8dp"
+                android:id="@+id/btnEraseProfile"
+                app:strokeColor="@color/black"
+                app:strokeWidth="2dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginBottom="16dp"
+                android:layout_gravity="end|bottom"
+                app:cardBackgroundColor="@color/black"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/chakra_petch_medium"
+                    android:text="@string/eliminar_cuenta"
+                    android:textAlignment="center"
+                    android:maxWidth="180dp"
+                    android:layout_gravity="center"
+                    android:textAllCaps="true"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:textColor="@color/white"
+                    app:drawableLeftCompat="@drawable/baseline_clear_24_graylight" />
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+</ScrollView>

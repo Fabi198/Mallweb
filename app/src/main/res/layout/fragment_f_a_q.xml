@@ -1,0 +1,624 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="fragmentsDrawerMenu.FAQFragment">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="24sp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="24dp"
+                android:id="@+id/tvFAQTitle"
+                android:fontFamily="@font/chakra_petch_medium"
+                android:textColor="#FF0000"
+                android:textAllCaps="true"
+                android:text="@string/preguntas_frecuentes"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:id="@+id/tvFAQ1"
+                android:maxWidth="320dp"
+                app:layout_constraintTop_toBottomOf="@+id/tvFAQTitle"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="24dp"
+                android:layout_marginStart="32dp"
+                android:textAllCaps="false"
+                android:fontFamily="@font/chakra_petch_medium"
+                android:text="@string/puedo_retirar"/>
+
+            <ImageButton
+                android:id="@+id/btnShowAnswer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="24dp"
+                android:background="@null"
+                android:src="@drawable/baseline_keyboard_arrow_down_24"
+                app:layout_constraintBottom_toBottomOf="@+id/tvFAQ1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/tvFAQ1"
+                tools:ignore="ContentDescription,ImageContrastCheck,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+            <ImageView
+                android:id="@+id/sepFAQ1"
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="@color/grayLight"
+                android:contentDescription="@string/todo"
+                android:src="@android:drawable/divider_horizontal_bright"
+                app:layout_constraintTop_toBottomOf="@+id/tvFAQ1"
+                tools:ignore="ImageContrastCheck"
+                tools:layout_editor_absoluteX="16dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="8dp"
+                android:id="@+id/llFAQ1"
+                app:layout_constraintTop_toBottomOf="@+id/sepFAQ1"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginStart="32dp"
+                    android:layout_gravity="center_vertical"
+                    android:maxWidth="356dp"
+                    android:id="@+id/ansFAQ1"
+                    android:visibility="gone"
+                    android:fontFamily="@font/chakra_petch_regular"
+                    android:text="@string/answerFAQ1"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:id="@+id/tvFAQ2"
+                android:maxWidth="320dp"
+                app:layout_constraintTop_toBottomOf="@+id/llFAQ1"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="24dp"
+                android:layout_marginStart="32dp"
+                android:textAllCaps="false"
+                android:fontFamily="@font/chakra_petch_medium"
+                android:text="@string/faq2"/>
+
+            <ImageButton
+                android:id="@+id/btnShowAnswer2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="24dp"
+                android:background="@null"
+                android:src="@drawable/baseline_keyboard_arrow_down_24"
+                app:layout_constraintBottom_toBottomOf="@+id/tvFAQ2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/tvFAQ2"
+                tools:ignore="ContentDescription,ImageContrastCheck,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+            <ImageView
+                android:id="@+id/sepFAQ2"
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="@color/grayLight"
+                android:contentDescription="@string/todo"
+                android:src="@android:drawable/divider_horizontal_bright"
+                app:layout_constraintTop_toBottomOf="@+id/tvFAQ2"
+                tools:ignore="ImageContrastCheck"
+                tools:layout_editor_absoluteX="16dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="8dp"
+                android:id="@+id/llFAQ2"
+                app:layout_constraintTop_toBottomOf="@+id/sepFAQ2"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginStart="32dp"
+                    android:layout_gravity="center_vertical"
+                    android:maxWidth="356dp"
+                    android:id="@+id/ansFAQ2"
+                    android:visibility="gone"
+                    android:fontFamily="@font/chakra_petch_regular"
+                    android:text="@string/ans2"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:id="@+id/tvFAQ3"
+                app:layout_constraintTop_toBottomOf="@+id/llFAQ2"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="24dp"
+                android:layout_marginStart="32dp"
+                android:textAllCaps="false"
+                android:maxWidth="320dp"
+                android:fontFamily="@font/chakra_petch_medium"
+                android:text="@string/faq3"/>
+
+            <ImageButton
+                android:id="@+id/btnShowAnswer3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="24dp"
+                android:background="@null"
+                android:src="@drawable/baseline_keyboard_arrow_down_24"
+                app:layout_constraintBottom_toBottomOf="@+id/tvFAQ3"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/tvFAQ3"
+                tools:ignore="ContentDescription,ImageContrastCheck,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+            <ImageView
+                android:id="@+id/sepFAQ3"
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="@color/grayLight"
+                android:contentDescription="@string/todo"
+                android:src="@android:drawable/divider_horizontal_bright"
+                app:layout_constraintTop_toBottomOf="@+id/tvFAQ3"
+                tools:ignore="ImageContrastCheck"
+                tools:layout_editor_absoluteX="16dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="8dp"
+                android:id="@+id/llFAQ3"
+                app:layout_constraintTop_toBottomOf="@+id/sepFAQ3"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginStart="32dp"
+                    android:layout_gravity="center_vertical"
+                    android:maxWidth="356dp"
+                    android:id="@+id/ansFAQ3"
+                    android:visibility="gone"
+                    android:fontFamily="@font/chakra_petch_regular"
+                    android:text="@string/ans3"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:id="@+id/tvFAQ4"
+                app:layout_constraintTop_toBottomOf="@+id/llFAQ3"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="24dp"
+                android:layout_marginStart="32dp"
+                android:textAllCaps="false"
+                android:maxWidth="320dp"
+                android:fontFamily="@font/chakra_petch_medium"
+                android:text="@string/faq4"/>
+
+            <ImageButton
+                android:id="@+id/btnShowAnswer4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="24dp"
+                android:background="@null"
+                android:src="@drawable/baseline_keyboard_arrow_down_24"
+                app:layout_constraintBottom_toBottomOf="@+id/tvFAQ4"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/tvFAQ4"
+                tools:ignore="ContentDescription,ImageContrastCheck,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+            <ImageView
+                android:id="@+id/sepFAQ4"
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="@color/grayLight"
+                android:contentDescription="@string/todo"
+                android:src="@android:drawable/divider_horizontal_bright"
+                app:layout_constraintTop_toBottomOf="@+id/tvFAQ4"
+                tools:ignore="ImageContrastCheck"
+                tools:layout_editor_absoluteX="16dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="8dp"
+                android:id="@+id/llFAQ4"
+                android:orientation="vertical"
+                app:layout_constraintTop_toBottomOf="@+id/sepFAQ4"
+                android:layout_height="wrap_content">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:orientation="vertical"
+                    android:id="@+id/llLinkAns4"
+                    android:visibility="gone"
+                    android:layout_height="wrap_content"
+                    tools:ignore="UselessParent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:layout_marginStart="32dp"
+                        android:layout_gravity="center_vertical"
+                        android:maxWidth="356dp"
+                        android:id="@+id/ansFAQ4"
+                        android:fontFamily="@font/chakra_petch_regular"
+                        android:text="@string/ans4"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:layout_marginStart="32dp"
+                        android:layout_gravity="center_vertical"
+                        android:maxWidth="356dp"
+                        android:textColorLink="@color/red"
+                        android:clickable="true"
+                        android:id="@+id/linkansFAQ4"
+                        android:fontFamily="@font/chakra_petch_regular"
+                        android:text="@string/linkAns4"
+                        android:layout_height="wrap_content"
+                        android:focusable="true" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:id="@+id/tvFAQ5"
+                app:layout_constraintTop_toBottomOf="@+id/llFAQ4"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="24dp"
+                android:layout_marginStart="32dp"
+                android:textAllCaps="false"
+                android:maxWidth="320dp"
+                android:fontFamily="@font/chakra_petch_medium"
+                android:text="@string/faq5"/>
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/baseline_keyboard_arrow_down_24"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="24dp"
+                android:id="@+id/btnShowAnswer5"
+                app:layout_constraintTop_toTopOf="@+id/tvFAQ5"
+                app:layout_constraintBottom_toBottomOf="@+id/tvFAQ5"
+                android:background="@null"
+                tools:ignore="ContentDescription" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:contentDescription="@string/todo"
+                android:layout_height="4dp"
+                android:background="@color/grayLight"
+                app:layout_constraintTop_toBottomOf="@+id/tvFAQ5"
+                android:layout_marginTop="8dp"
+                android:id="@+id/sepFAQ5"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:src="@android:drawable/divider_horizontal_bright" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="8dp"
+                android:id="@+id/llFAQ5"
+                app:layout_constraintTop_toBottomOf="@+id/sepFAQ5"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginStart="32dp"
+                    android:layout_gravity="center_vertical"
+                    android:maxWidth="356dp"
+                    android:id="@+id/ansFAQ5"
+                    android:visibility="gone"
+                    android:fontFamily="@font/chakra_petch_regular"
+                    android:text="@string/ans5"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:id="@+id/tvFAQ6"
+                app:layout_constraintTop_toBottomOf="@+id/llFAQ5"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="24dp"
+                android:layout_marginStart="32dp"
+                android:textAllCaps="false"
+                android:maxWidth="320dp"
+                android:fontFamily="@font/chakra_petch_medium"
+                android:text="@string/faq6"/>
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/baseline_keyboard_arrow_down_24"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="24dp"
+                android:id="@+id/btnShowAnswer6"
+                app:layout_constraintTop_toTopOf="@+id/tvFAQ6"
+                app:layout_constraintBottom_toBottomOf="@+id/tvFAQ6"
+                android:background="@null"
+                tools:ignore="ContentDescription" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:contentDescription="@string/todo"
+                android:layout_height="4dp"
+                android:background="@color/grayLight"
+                app:layout_constraintTop_toBottomOf="@+id/tvFAQ6"
+                android:layout_marginTop="8dp"
+                android:id="@+id/sepFAQ6"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:src="@android:drawable/divider_horizontal_bright" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="8dp"
+                android:id="@+id/llFAQ6"
+                app:layout_constraintTop_toBottomOf="@+id/sepFAQ6"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginStart="32dp"
+                    android:layout_gravity="center_vertical"
+                    android:maxWidth="356dp"
+                    android:id="@+id/ansFAQ6"
+                    android:visibility="gone"
+                    android:fontFamily="@font/chakra_petch_regular"
+                    android:text="@string/asn6"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:id="@+id/tvFAQ7"
+                app:layout_constraintTop_toBottomOf="@+id/llFAQ6"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="24dp"
+                android:layout_marginStart="32dp"
+                android:textAllCaps="false"
+                android:maxWidth="320dp"
+                android:fontFamily="@font/chakra_petch_medium"
+                android:text="@string/faq7"/>
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/baseline_keyboard_arrow_down_24"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="24dp"
+                android:id="@+id/btnShowAnswer7"
+                app:layout_constraintTop_toTopOf="@+id/tvFAQ7"
+                app:layout_constraintBottom_toBottomOf="@+id/tvFAQ7"
+                android:background="@null"
+                tools:ignore="ContentDescription" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:contentDescription="@string/todo"
+                android:layout_height="4dp"
+                android:background="@color/grayLight"
+                app:layout_constraintTop_toBottomOf="@+id/tvFAQ7"
+                android:layout_marginTop="8dp"
+                android:id="@+id/sepFAQ7"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:src="@android:drawable/divider_horizontal_bright" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="8dp"
+                android:id="@+id/llFAQ7"
+                app:layout_constraintTop_toBottomOf="@+id/sepFAQ7"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginStart="32dp"
+                    android:layout_gravity="center_vertical"
+                    android:maxWidth="356dp"
+                    android:id="@+id/ansFAQ7"
+                    android:visibility="gone"
+                    android:fontFamily="@font/chakra_petch_regular"
+                    android:text="@string/ans7"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:id="@+id/tvFAQ8"
+                app:layout_constraintTop_toBottomOf="@+id/llFAQ7"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="24dp"
+                android:layout_marginStart="32dp"
+                android:textAllCaps="false"
+                android:maxWidth="320dp"
+                android:fontFamily="@font/chakra_petch_medium"
+                android:text="@string/faq8"/>
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/baseline_keyboard_arrow_down_24"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="24dp"
+                android:id="@+id/btnShowAnswer8"
+                app:layout_constraintTop_toTopOf="@+id/tvFAQ8"
+                app:layout_constraintBottom_toBottomOf="@+id/tvFAQ8"
+                android:background="@null"
+                tools:ignore="ContentDescription" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:contentDescription="@string/todo"
+                android:layout_height="4dp"
+                android:background="@color/grayLight"
+                app:layout_constraintTop_toBottomOf="@+id/tvFAQ8"
+                android:layout_marginTop="8dp"
+                android:id="@+id/sepFAQ8"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:src="@android:drawable/divider_horizontal_bright" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="8dp"
+                android:id="@+id/llFAQ8"
+                app:layout_constraintTop_toBottomOf="@+id/sepFAQ8"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:orientation="vertical"
+                    android:id="@+id/llLinkAns8"
+                    android:visibility="gone"
+                    android:layout_height="wrap_content"
+                    tools:ignore="UselessParent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:layout_marginStart="32dp"
+                        android:layout_gravity="center_vertical"
+                        android:maxWidth="356dp"
+                        android:id="@+id/ansFAQ8"
+                        android:fontFamily="@font/chakra_petch_regular"
+                        android:text="@string/ans8"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:layout_marginStart="32dp"
+                        android:layout_gravity="center_vertical"
+                        android:maxWidth="356dp"
+                        android:textColorLink="@color/red"
+                        android:clickable="true"
+                        android:id="@+id/linkansFAQ8"
+                        android:fontFamily="@font/chakra_petch_regular"
+                        android:text="@string/aqui"
+                        android:layout_height="wrap_content"
+                        android:focusable="true" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:id="@+id/tvFAQ9"
+                app:layout_constraintTop_toBottomOf="@+id/llFAQ8"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="24dp"
+                android:layout_marginStart="32dp"
+                android:textAllCaps="false"
+                android:maxWidth="320dp"
+                android:fontFamily="@font/chakra_petch_medium"
+                android:text="@string/faq9"/>
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/baseline_keyboard_arrow_down_24"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="24dp"
+                android:id="@+id/btnShowAnswer9"
+                app:layout_constraintTop_toTopOf="@+id/tvFAQ9"
+                app:layout_constraintBottom_toBottomOf="@+id/tvFAQ9"
+                android:background="@null"
+                tools:ignore="ContentDescription" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:contentDescription="@string/todo"
+                android:layout_height="4dp"
+                android:background="@color/grayLight"
+                app:layout_constraintTop_toBottomOf="@+id/tvFAQ9"
+                android:layout_marginTop="8dp"
+                android:id="@+id/sepFAQ9"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:src="@android:drawable/divider_horizontal_bright" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="8dp"
+                android:id="@+id/llFAQ9"
+                app:layout_constraintTop_toBottomOf="@+id/sepFAQ9"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginStart="32dp"
+                    android:layout_gravity="center_vertical"
+                    android:maxWidth="356dp"
+                    android:id="@+id/ansFAQ9"
+                    android:visibility="gone"
+                    android:fontFamily="@font/chakra_petch_regular"
+                    android:text="@string/ans9"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

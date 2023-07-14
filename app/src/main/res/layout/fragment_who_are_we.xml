@@ -1,0 +1,449 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context="fragmentsDrawerMenu.WhoAreWeFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/chakra_petch_medium"
+            android:textColor="#FF0000"
+            android:textAllCaps="true"
+            android:text="@string/quienes_somos"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:maxWidth="320dp"
+            android:fontFamily="@font/chakra_petch_semi_bold"
+            android:textAllCaps="false"
+            android:text="@string/waw1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:maxWidth="320dp"
+            android:fontFamily="@font/chakra_petch_medium"
+            android:textAllCaps="false"
+            android:text="@string/wawAns1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:maxWidth="320dp"
+            android:fontFamily="@font/chakra_petch_semi_bold"
+            android:textAllCaps="false"
+            android:text="@string/waw2"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:maxWidth="320dp"
+            android:fontFamily="@font/chakra_petch_medium"
+            android:textAllCaps="false"
+            android:text="@string/wawAns2"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:maxWidth="320dp"
+            android:fontFamily="@font/chakra_petch_semi_bold"
+            android:textAllCaps="false"
+            android:text="@string/waw3"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:maxWidth="320dp"
+            android:fontFamily="@font/chakra_petch_medium"
+            android:textAllCaps="false"
+            android:text="@string/wawAns3"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:maxWidth="320dp"
+            android:fontFamily="@font/chakra_petch_semi_bold"
+            android:textAllCaps="false"
+            android:text="@string/waw4"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:maxWidth="320dp"
+            android:fontFamily="@font/chakra_petch_medium"
+            android:textAllCaps="false"
+            android:text="@string/wawAns4"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:maxWidth="320dp"
+            android:fontFamily="@font/chakra_petch_semi_bold"
+            android:textAllCaps="false"
+            android:text="@string/waw5"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:maxWidth="320dp"
+            android:fontFamily="@font/chakra_petch_medium"
+            android:textAllCaps="false"
+            android:text="@string/wawAns5"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:maxWidth="320dp"
+            android:fontFamily="@font/chakra_petch_semi_bold"
+            android:textAllCaps="false"
+            android:text="@string/waw6"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="32dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxWidth="320dp"
+                android:fontFamily="@font/chakra_petch_semi_bold"
+                android:textAllCaps="false"
+                android:text="@string/facebook"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:maxWidth="320dp"
+                android:id="@+id/linkFacebookMallweb"
+                android:fontFamily="@font/chakra_petch_medium"
+                android:textAllCaps="false"
+                android:text="@string/link_face_mallweb_com_ar"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="32dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxWidth="320dp"
+                android:fontFamily="@font/chakra_petch_semi_bold"
+                android:textAllCaps="false"
+                android:text="@string/instagram"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:maxWidth="320dp"
+                android:id="@+id/linkInstagramMallweb"
+                android:fontFamily="@font/chakra_petch_medium"
+                android:textAllCaps="false"
+                android:text="@string/link_insta_mallweb_com_ar"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="32dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxWidth="320dp"
+                android:fontFamily="@font/chakra_petch_semi_bold"
+                android:textAllCaps="false"
+                android:text="@string/telefonos"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:maxWidth="320dp"
+                android:id="@+id/linkPhoneMallweb"
+                android:fontFamily="@font/chakra_petch_medium"
+                android:textAllCaps="false"
+                android:text="@string/_011_4702_2760_de_lunes_a_viernes_de_9_a_18hs"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="32dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxWidth="320dp"
+                android:fontFamily="@font/chakra_petch_semi_bold"
+                android:textAllCaps="false"
+                android:text="@string/whatsapp_number_mallweb"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:maxWidth="320dp"
+                android:fontFamily="@font/chakra_petch_medium"
+                android:textAllCaps="false"
+                android:id="@+id/linkWhatsappMallweb"
+                android:text="@string/_5491147022760_de_lunes_a_viernes_de_9_a_18hs"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="32dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxWidth="320dp"
+                android:fontFamily="@font/chakra_petch_semi_bold"
+                android:textAllCaps="false"
+                android:text="@string/telegram"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:maxWidth="320dp"
+                android:id="@+id/linkTelegramMallweb"
+                android:fontFamily="@font/chakra_petch_medium"
+                android:textAllCaps="false"
+                android:text="@string/_541164765577_de_lunes_a_viernes_de_9_a_18hs"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="32dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxWidth="320dp"
+                android:fontFamily="@font/chakra_petch_semi_bold"
+                android:textAllCaps="false"
+                android:text="@string/e_mail"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:maxWidth="320dp"
+                android:id="@+id/linkMailMallweb"
+                android:fontFamily="@font/chakra_petch_medium"
+                android:textAllCaps="false"
+                android:text="@string/venta_mallweb_com_ar_email"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:maxWidth="320dp"
+            android:fontFamily="@font/chakra_petch_semi_bold"
+            android:textAllCaps="false"
+            android:text="@string/waw7"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="32dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxWidth="320dp"
+                android:fontFamily="@font/chakra_petch_semi_bold"
+                android:textAllCaps="false"
+                android:text="@string/tel_fono_o_whatsapp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:maxWidth="320dp"
+                android:id="@+id/linkWhatsappMallweb2"
+                android:fontFamily="@font/chakra_petch_medium"
+                android:textAllCaps="false"
+                android:text="@string/_541164765577_de_lunes_a_viernes_de_9_a_18hs_whatsapp"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:maxWidth="320dp"
+            android:fontFamily="@font/chakra_petch_semi_bold"
+            android:textAllCaps="false"
+            android:text="@string/para_consultas_por_compras_realizadas_desde_mercadolibre"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="32dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxWidth="320dp"
+                android:fontFamily="@font/chakra_petch_semi_bold"
+                android:textAllCaps="false"
+                android:text="@string/whatsapp_number_mallweb"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:maxWidth="320dp"
+                android:id="@+id/linkWhatsappMallweb3"
+                android:fontFamily="@font/chakra_petch_medium"
+                android:textAllCaps="false"
+                android:text="@string/_541164765577_de_lunes_a_viernes_de_9_a_18hs_whatsapp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="32dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxWidth="320dp"
+                android:fontFamily="@font/chakra_petch_semi_bold"
+                android:textAllCaps="false"
+                android:text="@string/e_mail"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:maxWidth="320dp"
+                android:id="@+id/linkMailMallwebVentas"
+                android:fontFamily="@font/chakra_petch_medium"
+                android:textAllCaps="false"
+                android:text="@string/ventas_mallweb_com_ar_email"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:maxWidth="320dp"
+            android:fontFamily="@font/chakra_petch_semi_bold"
+            android:textAllCaps="false"
+            android:text="@string/atenci_n_post_venta_soporte_t_cnico_mallweb_mercadolibre"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="32dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxWidth="320dp"
+                android:fontFamily="@font/chakra_petch_semi_bold"
+                android:textAllCaps="false"
+                android:text="@string/completar_formulario"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:maxWidth="320dp"
+                android:id="@+id/linkForm"
+                android:fontFamily="@font/chakra_petch_medium"
+                android:textAllCaps="false"
+                android:text="@string/click_aqu"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="32dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxWidth="320dp"
+                android:fontFamily="@font/chakra_petch_semi_bold"
+                android:textAllCaps="false"
+                android:text="@string/whatsapp_number_mallweb"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:maxWidth="320dp"
+                android:id="@+id/linkWhatsappMallweb4"
+                android:fontFamily="@font/chakra_petch_medium"
+                android:textAllCaps="false"
+                android:text="@string/_541164765577_de_lunes_a_viernes_de_9_a_18hs_whatsapp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

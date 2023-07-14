@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="fragmentsDrawerMenu.BankDataFragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:layout_marginTop="24dp"
+        android:textAllCaps="true"
+        android:layout_marginStart="32dp"
+        android:fontFamily="@font/chakra_petch_medium"
+        android:textColor="#FF0000"
+        android:text="@string/datos_bancarios"/>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="10dp"
+        android:layout_marginTop="40dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="20dp"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="8dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxWidth="320dp"
+                    android:fontFamily="@font/chakra_petch_semi_bold"
+                    android:textAllCaps="false"
+                    android:textColor="#447446"
+                    android:text="@string/santander_rio"
+                    android:drawablePadding="8dp"
+                    app:drawableLeftCompat="@drawable/baseline_account_balance_24" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="8dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxWidth="320dp"
+                    android:fontFamily="@font/chakra_petch_semi_bold"
+                    android:textAllCaps="false"
+                    android:text="@string/titular"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:maxWidth="320dp"
+                    android:fontFamily="@font/chakra_petch_medium"
+                    android:textAllCaps="false"
+                    android:text="@string/polytech_s_a"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxWidth="320dp"
+                    android:fontFamily="@font/chakra_petch_semi_bold"
+                    android:textAllCaps="false"
+                    android:text="@string/cuenta_corriente"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:maxWidth="320dp"
+                    android:fontFamily="@font/chakra_petch_medium"
+                    android:textAllCaps="false"
+                    android:text="@string/_432_000743_8"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxWidth="320dp"
+                    android:fontFamily="@font/chakra_petch_semi_bold"
+                    android:textAllCaps="false"
+                    android:text="@string/c_u_i_t"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:maxWidth="320dp"
+                    android:fontFamily="@font/chakra_petch_medium"
+                    android:textAllCaps="false"
+                    android:text="@string/_33643358749"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxWidth="320dp"
+                    android:fontFamily="@font/chakra_petch_semi_bold"
+                    android:textAllCaps="false"
+                    android:text="@string/cbu"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:maxWidth="320dp"
+                    android:fontFamily="@font/chakra_petch_medium"
+                    android:textAllCaps="false"
+                    android:text="@string/_0720432020000000074386"/>
+
+                <ImageButton
+                    android:id="@+id/btnCopyCBU"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="4dp"
+                    android:background="@null"
+                    android:contentDescription="@string/todo"
+                    android:src="@drawable/baseline_content_copy_24"
+                    tools:ignore="TouchTargetSizeCheck,ImageContrastCheck" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxWidth="320dp"
+                    android:fontFamily="@font/chakra_petch_semi_bold"
+                    android:textAllCaps="false"
+                    android:text="@string/alias"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:maxWidth="320dp"
+                    android:fontFamily="@font/chakra_petch_medium"
+                    android:textAllCaps="false"
+                    android:text="@string/sombra_par_foto"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

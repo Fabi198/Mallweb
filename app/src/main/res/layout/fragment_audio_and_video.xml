@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="fragmentsSubAllCategories.AudioAndVideoFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="8dp"
+        android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:layout_marginStart="32dp"
+        android:fontFamily="@font/chakra_petch_medium"
+        android:textColor="#FF0000"
+        android:textAllCaps="true"
+        android:text="@string/audio_y_video"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="32dp"
+        android:textAllCaps="true"
+        android:fontFamily="@font/chakra_petch_semi_bold"
+        android:text="@string/audio_y_video"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:contentDescription="@string/todo"
+        android:layout_height="2dp"
+        android:background="@color/gray"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:src="@android:drawable/divider_horizontal_bright" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="48dp"
+        android:textAllCaps="false"
+        android:id="@+id/btnBarraDeSonido"
+        android:fontFamily="@font/chakra_petch_medium"
+        android:text="@string/barra_de_sonido"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:contentDescription="@string/todo"
+        android:layout_height="2dp"
+        android:background="@color/gray"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:src="@android:drawable/divider_horizontal_bright" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="48dp"
+        android:textAllCaps="false"
+        android:id="@+id/btnParlantes"
+        android:fontFamily="@font/chakra_petch_medium"
+        android:text="@string/parlantes"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:contentDescription="@string/todo"
+        android:layout_height="2dp"
+        android:background="@color/gray"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:src="@android:drawable/divider_horizontal_bright" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="48dp"
+        android:textAllCaps="false"
+        android:id="@+id/btnSoportes"
+        android:fontFamily="@font/chakra_petch_medium"
+        android:text="@string/soportes"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:contentDescription="@string/todo"
+        android:layout_height="2dp"
+        android:background="@color/gray"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:src="@android:drawable/divider_horizontal_bright" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="48dp"
+        android:textAllCaps="false"
+        android:id="@+id/btnTVLCDLED"
+        android:fontFamily="@font/chakra_petch_medium"
+        android:text="@string/tv_lcd_led"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:contentDescription="@string/todo"
+        android:layout_height="2dp"
+        android:background="@color/gray"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:src="@android:drawable/divider_horizontal_bright" />
+
+    </LinearLayout>
+
+</ScrollView>

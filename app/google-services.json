@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "761570647216",
+    "project_id": "mallweb-f905f",
+    "storage_bucket": "mallweb-f905f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:761570647216:android:500f039fe3358abfd86f75",
+        "android_client_info": {
+          "package_name": "com.example.mallweb"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "761570647216-5ntb8r9jl4knoe1fjilfsijrme43epje.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB69MWmNkSC5eqfnA2g39bRkJNdMYNaoyA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "761570647216-5ntb8r9jl4knoe1fjilfsijrme43epje.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

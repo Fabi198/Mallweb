@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="fragmentsSubAllCategories.ComponentsFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="8dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:layout_marginStart="32dp"
+            android:fontFamily="@font/chakra_petch_medium"
+            android:textColor="#FF0000"
+            android:textAllCaps="true"
+            android:text="@string/componentes_para_pc"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_marginTop="24dp"
+            android:layout_marginStart="32dp"
+            android:textAllCaps="true"
+            android:fontFamily="@font/chakra_petch_semi_bold"
+            android:text="@string/componentes_para_pc"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:contentDescription="@string/todo"
+            android:layout_height="2dp"
+            android:background="@color/gray"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:src="@android:drawable/divider_horizontal_bright" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_marginTop="24dp"
+            android:layout_marginStart="48dp"
+            android:textAllCaps="false"
+            android:id="@+id/btnCombosActualizacion"
+            android:fontFamily="@font/chakra_petch_medium"
+            android:text="@string/combos_actualizaci_n_pc"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:contentDescription="@string/todo"
+            android:layout_height="2dp"
+            android:background="@color/gray"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:src="@android:drawable/divider_horizontal_bright" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:id="@+id/btnFuentesAlimentacion"
+            android:layout_marginTop="24dp"
+            android:layout_marginStart="48dp"
+            android:textAllCaps="false"
+            android:fontFamily="@font/chakra_petch_medium"
+            android:text="@string/fuentes_de_alimentaci_n"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:contentDescription="@string/todo"
+            android:layout_height="2dp"
+            android:background="@color/gray"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:src="@android:drawable/divider_horizontal_bright" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_marginTop="24dp"
+            android:layout_marginStart="48dp"
+            android:textAllCaps="false"
+            android:id="@+id/btnMemoriasPc"
+            android:fontFamily="@font/chakra_petch_medium"
+            android:text="@string/memorias_para_pc"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:contentDescription="@string/todo"
+            android:layout_height="2dp"
+            android:background="@color/gray"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:src="@android:drawable/divider_horizontal_bright" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_marginTop="24dp"
+            android:layout_marginStart="48dp"
+            android:textAllCaps="false"
+            android:id="@+id/btnMemoriasNotebook"
+            android:fontFamily="@font/chakra_petch_medium"
+            android:text="@string/memorias_para_notebook"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:contentDescription="@string/todo"
+            android:layout_height="2dp"
+            android:background="@color/gray"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:src="@android:drawable/divider_horizontal_bright" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_marginTop="24dp"
+            android:layout_marginStart="48dp"
+            android:textAllCaps="false"
+            android:id="@+id/btnMicroAMD"
+            android:fontFamily="@font/chakra_petch_medium"
+            android:text="@string/microprocesadores_amd"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:contentDescription="@string/todo"
+            android:layout_height="2dp"
+            android:background="@color/gray"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:src="@android:drawable/divider_horizontal_bright" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_marginTop="24dp"
+            android:layout_marginStart="48dp"
+            android:textAllCaps="false"
+            android:id="@+id/btnMicroINTEL"
+            android:fontFamily="@font/chakra_petch_medium"
+            android:text="@string/microprocesadores_intel"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:contentDescription="@string/todo"
+            android:layout_height="2dp"
+            android:background="@color/gray"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:src="@android:drawable/divider_horizontal_bright" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_marginTop="24dp"
+            android:layout_marginStart="48dp"
+            android:textAllCaps="false"
+            android:id="@+id/btnMotherAMD"
+            android:fontFamily="@font/chakra_petch_medium"
+            android:text="@string/mother_para_amd"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:contentDescription="@string/todo"
+            android:layout_height="2dp"
+            android:background="@color/gray"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:src="@android:drawable/divider_horizontal_bright" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_marginTop="24dp"
+            android:layout_marginStart="48dp"
+            android:textAllCaps="false"
+            android:id="@+id/btnMotherINTEL"
+            android:fontFamily="@font/chakra_petch_medium"
+            android:text="@string/mother_para_intel"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:contentDescription="@string/todo"
+            android:layout_height="2dp"
+            android:background="@color/gray"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:src="@android:drawable/divider_horizontal_bright" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_marginTop="24dp"
+            android:layout_marginStart="48dp"
+            android:textAllCaps="false"
+            android:id="@+id/btnPlacaDeVideo"
+            android:fontFamily="@font/chakra_petch_medium"
+            android:text="@string/placa_de_video"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:contentDescription="@string/todo"
+            android:layout_height="2dp"
+            android:background="@color/gray"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:src="@android:drawable/divider_horizontal_bright" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_marginTop="24dp"
+            android:layout_marginStart="48dp"
+            android:textAllCaps="false"
+            android:id="@+id/btnUPS"
+            android:fontFamily="@font/chakra_petch_medium"
+            android:text="@string/ups"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:contentDescription="@string/todo"
+            android:layout_height="2dp"
+            android:background="@color/gray"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:src="@android:drawable/divider_horizontal_bright" />
+
+    </LinearLayout>
+
+</ScrollView>

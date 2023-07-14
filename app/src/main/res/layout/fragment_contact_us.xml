@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="fragmentsDrawerMenu.ContactUsFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="8dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="32dp"
+            android:fontFamily="@font/chakra_petch_medium"
+            android:textColor="#FF0000"
+            android:textAllCaps="true"
+            android:text="@string/contacto"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_marginTop="24dp"
+            android:layout_marginStart="32dp"
+            android:textAllCaps="false"
+            android:textColor="#FF0000"
+            android:fontFamily="@font/chakra_petch_regular"
+            android:text="@string/lunes_a_viernes_de_9_00_a_17_30"/>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="24dp"
+            android:layout_height="wrap_content"
+            tools:ignore="UseCompoundDrawables">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:contentDescription="@string/todo"
+                android:id="@+id/btnMailMallweb"
+                android:src="@drawable/mallweb_sociallogo_mail"/>
+
+            <TextView
+                android:id="@+id/tvContactMail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="16dp"
+                android:fontFamily="@font/chakra_petch_semi_bold"
+                android:text="@string/venta_mallweb_com_ar_email"
+                android:textAllCaps="false"
+                android:textSize="20sp"
+                tools:ignore="TextContrastCheck" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="24dp"
+            android:layout_marginStart="32dp"
+            android:layout_height="wrap_content"
+            tools:ignore="UseCompoundDrawables">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:contentDescription="@string/todo"
+                android:id="@+id/btnWhatsappMallweb"
+                android:src="@drawable/mallweb_sociallogo_whatsapp"/>
+
+            <TextView
+                android:id="@+id/tvContactCellphone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="16dp"
+                android:fontFamily="@font/chakra_petch_semi_bold"
+                android:text="@string/_1147022760"
+                android:textAllCaps="false"
+                android:textSize="20sp"
+                tools:ignore="TextContrastCheck" />
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="16dp"
+            android:background="@color/gray"
+            android:contentDescription="@string/todo"
+            android:src="@android:drawable/divider_horizontal_bright"
+            tools:ignore="ImageContrastCheck" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_marginTop="24dp"
+            android:layout_marginStart="32dp"
+            android:textAllCaps="false"
+            android:textColor="#FF0000"
+            android:fontFamily="@font/chakra_petch_regular"
+            android:text="@string/seguinos"/>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="24dp"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/btnInstagram"
+                android:contentDescription="@string/todo"
+                android:src="@drawable/mallweb_sociallogo_instagram"/>
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/btnFacebook"
+                android:layout_marginStart="24dp"
+                android:contentDescription="@string/todo"
+                android:src="@drawable/mallweb_sociallogo_facebook"/>
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/btnYoutube"
+                android:layout_marginStart="24dp"
+                android:contentDescription="@string/todo"
+                android:src="@drawable/mallweb_sociallogo_youtube"/>
+
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="16dp"
+            android:background="@color/gray"
+            android:contentDescription="@string/todo"
+            android:src="@android:drawable/divider_horizontal_bright"
+            tools:ignore="ImageContrastCheck" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_marginTop="24dp"
+            android:layout_marginStart="32dp"
+            android:textAllCaps="false"
+            android:textColor="#FF0000"
+            android:fontFamily="@font/chakra_petch_regular"
+            android:text="@string/d_nde_estamos"/>
+
+
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_margin="16dp"
+            android:layout_height="300dp">
+
+            <fragment
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/map"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                tools:ignore="FragmentTagUsage">
+            </fragment>
+
+
+        </FrameLayout>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/chakra_petch_regular"
+                android:text="@string/n_ez_caba"
+                android:textAllCaps="false"
+                app:drawableLeftCompat="@drawable/baseline_location_on_24" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:fontFamily="@font/chakra_petch_regular"
+                android:textAllCaps="false"
+                android:text="@string/lunes_a_viernes_de_9_00_a_17_30"
+                app:drawableLeftCompat="@drawable/baseline_watch_later_24" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <ImageView
+            android:id="@+id/btnAFIP"
+            android:layout_width="40dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="22dp"
+            android:layout_marginBottom="8dp"
+            android:contentDescription="@string/todo"
+            android:src="@drawable/mallweb_qr_afip"
+            tools:ignore="ImageContrastCheck" />
+
+    </LinearLayout>
+
+
+</ScrollView>
