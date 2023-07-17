@@ -1,10 +1,9 @@
-package com.example.mallweb.fragments
+package com.example.mallweb.objects
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentActivity
 import com.example.mallweb.R
-import java.util.ArrayList
 
 object ShowFragment {
 

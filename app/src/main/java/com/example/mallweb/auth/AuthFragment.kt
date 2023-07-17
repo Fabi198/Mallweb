@@ -5,8 +5,8 @@ import android.content.Intent
 import android.content.SharedPreferences
 import android.os.Bundle
 import android.text.InputType.*
-import android.util.Log
 import android.view.View
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import com.example.mallweb.MallWeb
@@ -80,24 +80,33 @@ class AuthFragment : Fragment(R.layout.fragment_auth) {
 
         binding.btnBasic.setOnClickListener {
             if (binding.etEmail.text.isNotEmpty() && binding.etPass.text.isNotEmpty()) {
+                val email = binding.etEmail.text.toString()
+                val password = binding.etPass.text.toString()
+                binding.pbAuth.visibility = View.VISIBLE
+                allGone()
                 val providerName = provider.BASIC
                 FirebaseAuth.getInstance().signInWithEmailAndPassword(
-                    binding.etEmail.text.toString(),
-                    binding.etPass.text.toString()
+                    email,
+                    password
                 )
                     .addOnCompleteListener {
                         if (it.isSuccessful) {
                             saveData(it.result?.user?.email ?: "", providerName)
                             onSuccessAuth()
                         } else {
+                            binding.pbAuth.visibility = View.GONE
+                            allVisible()
                             showAlert()
                         }
                     }
-
+            } else {
+                Toast.makeText(requireContext(), "Debe completar ambos campos", Toast.LENGTH_SHORT).show()
             }
         }
 
         binding.btnGoogle.setOnClickListener {
+            allGone()
+            binding.pbAuth.visibility = View.VISIBLE
             val googleConf = GoogleSignInOptions
                 .Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
                 .requestIdToken(getString(R.string.default_web_client_id))
@@ -153,17 +162,21 @@ class AuthFragment : Fragment(R.layout.fragment_auth) {
                                         saveData(account.email ?: "", providerName)
                                         onSuccessAuth()
                                     } else {
+                                        binding.pbAuth.visibility = View.GONE
+                                        allVisible()
                                         googleClient.signOut()
                                     }
                                 }
-
-
                             } else {
+                                binding.pbAuth.visibility = View.GONE
+                                allVisible()
                                 showAlert()
                             }
                         }
                 }
             } catch (e: ApiException) {
+                binding.pbAuth.visibility = View.GONE
+                allVisible()
                 showAlert2()
             }
 
@@ -177,15 +190,12 @@ class AuthFragment : Fragment(R.layout.fragment_auth) {
         val idClient = getUserID(requireContext(), requireActivity())
         var task = ""
         val dbMallweb = DbMallweb(requireContext())
-        Log.i("postalTag", tag!!)
-        Log.i("postalIdClient", idClient.toString())
         when (tag) {
             "AccountFragment" -> {
                 task = "Open Account Fragment"
             }
             "ProductDetailFragment" -> {
                 if (idProduct != null) {
-                    Log.i("postalQuantity", quantity.toString())
                     task = if (quantity != null && quantity > 0) {
                         dbMallweb.addProductToShoppingCart(
                             idClient,
@@ -251,6 +261,24 @@ class AuthFragment : Fragment(R.layout.fragment_auth) {
         prefsEd.putString("email", email)
         prefsEd.putString("provider", providerName)
         prefsEd.apply()
+    }
+
+    private fun allVisible() {
+        binding.tvFastAuth.visibility = View.VISIBLE
+        binding.tvManualAuth.visibility = View.VISIBLE
+        binding.btnGoogle.visibility = View.VISIBLE
+        binding.llManualAuth.visibility = View.VISIBLE
+        binding.btnBasic.visibility = View.VISIBLE
+        binding.llBtnRegister.visibility = View.VISIBLE
+    }
+
+    private fun allGone() {
+        binding.tvFastAuth.visibility = View.GONE
+        binding.tvManualAuth.visibility = View.GONE
+        binding.btnGoogle.visibility = View.GONE
+        binding.llManualAuth.visibility = View.GONE
+        binding.btnBasic.visibility = View.GONE
+        binding.llBtnRegister.visibility = View.GONE
     }
 
 }

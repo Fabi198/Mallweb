@@ -17,8 +17,8 @@ import com.example.mallweb.R
 import com.example.mallweb.databinding.FragmentShoppingCartStep2Binding
 import com.example.mallweb.db.DbMallweb
 import com.example.mallweb.entities.dbEntities.Client
-import com.example.mallweb.fragments.ShowFragment.showFragmentFromFragment
 import com.example.mallweb.html.*
+import com.example.mallweb.objects.ShowFragment.showFragmentFromFragment
 import java.util.*
 
 

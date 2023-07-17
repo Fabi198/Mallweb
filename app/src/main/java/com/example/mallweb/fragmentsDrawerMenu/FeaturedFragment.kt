@@ -7,8 +7,8 @@ import com.example.mallweb.R
 import com.example.mallweb.databinding.FragmentFeaturedBinding
 import com.example.mallweb.db.DbMallweb
 import com.example.mallweb.fragments.CategoryFragment
-import com.example.mallweb.fragments.ShowFragment.showFragmentFromFragment
 import com.example.mallweb.misc.DarkMode.isDarkModeEnabled
+import com.example.mallweb.objects.ShowFragment.showFragmentFromFragment
 import com.squareup.picasso.Picasso
 
 class FeaturedFragment : Fragment(R.layout.fragment_featured) {

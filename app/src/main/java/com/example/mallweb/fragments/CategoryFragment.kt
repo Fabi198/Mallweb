@@ -5,14 +5,14 @@ import android.view.View
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.mallweb.R
-import com.example.mallweb.databinding.FragmentCategoryBinding
 import com.example.mallweb.adapters.BrandAdapter
 import com.example.mallweb.adapters.CategoryAdapterShow10ProductsForEachSubCategory
+import com.example.mallweb.databinding.FragmentCategoryBinding
 import com.example.mallweb.db.DbMallweb
-import com.example.mallweb.fragments.ShowFragment.showFragmentFromFragment
+import com.example.mallweb.misc.DarkMode.isDarkModeEnabled
 import com.example.mallweb.objects.Session.getUserID
 import com.example.mallweb.objects.Session.sessionFromFragment
-import com.example.mallweb.misc.DarkMode.isDarkModeEnabled
+import com.example.mallweb.objects.ShowFragment.showFragmentFromFragment
 import com.squareup.picasso.Picasso
 
 

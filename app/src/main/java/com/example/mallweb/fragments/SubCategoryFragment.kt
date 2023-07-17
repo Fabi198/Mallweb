@@ -7,13 +7,13 @@ import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.mallweb.R
-import com.example.mallweb.databinding.FragmentSubCategoryBinding
 import com.example.mallweb.adapters.ProductAdapter
 import com.example.mallweb.adapters.SubCategoryAdapterShowAllProductsOfEachBrand
+import com.example.mallweb.databinding.FragmentSubCategoryBinding
 import com.example.mallweb.db.DbMallweb
-import com.example.mallweb.fragments.ShowFragment.showFragmentFromFragment
 import com.example.mallweb.objects.Session.getUserID
 import com.example.mallweb.objects.Session.sessionFromFragment
+import com.example.mallweb.objects.ShowFragment.showFragmentFromFragment
 
 
 class SubCategoryFragment : Fragment(R.layout.fragment_sub_category) {

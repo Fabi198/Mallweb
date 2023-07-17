@@ -7,12 +7,12 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.mallweb.R
-import com.example.mallweb.databinding.FragmentMyOrdersBinding
 import com.example.mallweb.adapters.OrdersAdapter
 import com.example.mallweb.alarms.AlarmAbbandonedOrder.setSecondAlarm
+import com.example.mallweb.databinding.FragmentMyOrdersBinding
 import com.example.mallweb.db.DbMallweb
-import com.example.mallweb.fragments.ShowFragment.showFragmentFromFragment
 import com.example.mallweb.fragmentsDrawerMenu.ShoppingCartFragmentStep1
+import com.example.mallweb.objects.ShowFragment.showFragmentFromFragment
 
 
 class MyOrders : Fragment(R.layout.fragment_my_orders) {
