@@ -450,5 +450,6 @@
     <string name="no_tenes_productos_en_favoritos">No tenes productos en favoritos</string>
     <string name="eliminar_cuenta">Eliminar cuenta</string>
     <string name="reingresa_tu_contrase_a">Reingresa tu contraseña</string>
+    <string name="agregar_al_carrito">Agregar al carrito</string>
 
 </resources>

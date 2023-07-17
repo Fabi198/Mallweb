@@ -15,6 +15,7 @@ import android.widget.TextView.OnEditorActionListener
 import android.widget.Toast
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.view.GravityCompat
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -51,7 +52,6 @@ class MallWeb: AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMallWebBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
 
 
         bundleFromAuth()
@@ -155,10 +155,34 @@ class MallWeb: AppCompatActivity() {
 
     @Deprecated("Deprecated in Java")
     override fun onBackPressed() {
-        if (supportFragmentManager.backStackEntryCount > 1) {
-            val currentTime = System.currentTimeMillis()
-            if (currentTime - lastClickTime < doubleClickTimeDelta) {
-                supportFragmentManager.popBackStack(null, FragmentManager.POP_BACK_STACK_INCLUSIVE)
+        if (binding.dlMallweb.isDrawerOpen(GravityCompat.START)) {
+            binding.dlMallweb.closeDrawer(GravityCompat.START)
+        } else {
+            if (supportFragmentManager.backStackEntryCount > 1) {
+                val currentTime = System.currentTimeMillis()
+                if (currentTime - lastClickTime < doubleClickTimeDelta) {
+                    supportFragmentManager.popBackStack(null, FragmentManager.POP_BACK_STACK_INCLUSIVE)
+                    val animLeftOut: Animation = AnimationUtils.loadAnimation(this, R.anim.left_out)
+                    binding.mallwebHomeContainer.startAnimation(animLeftOut)
+                    animLeftOut.setAnimationListener(object: AnimationListener{
+                        override fun onAnimationStart(animation: Animation?) {}
+                        override fun onAnimationEnd(animation: Animation?) { supportFragmentManager.popBackStack() }
+                        override fun onAnimationRepeat(animation: Animation?) {}
+                    })
+                    allVisible()
+                } else {
+                    lastClickTime = currentTime
+                    val prefs = getSharedPreferences("MY PREF", MODE_PRIVATE)
+                    val isToastShown = prefs.getBoolean("isToastShown", false)
+                    if (!isToastShown) {
+                        Toast.makeText(this, "Presiona 2 veces para volver al inicio", Toast.LENGTH_SHORT).show()
+                        val editor = prefs.edit()
+                        editor.putBoolean("isToastShown", true)
+                        editor.apply()
+                    }
+                    supportFragmentManager.popBackStack()
+                }
+            } else if (supportFragmentManager.backStackEntryCount == 1) {
                 val animLeftOut: Animation = AnimationUtils.loadAnimation(this, R.anim.left_out)
                 binding.mallwebHomeContainer.startAnimation(animLeftOut)
                 animLeftOut.setAnimationListener(object: AnimationListener{
@@ -168,28 +192,8 @@ class MallWeb: AppCompatActivity() {
                 })
                 allVisible()
             } else {
-                lastClickTime = currentTime
-                val prefs = getSharedPreferences("MY PREF", MODE_PRIVATE)
-                val isToastShown = prefs.getBoolean("isToastShown", false)
-                if (!isToastShown) {
-                    Toast.makeText(this, "Presiona 2 veces para volver al inicio", Toast.LENGTH_SHORT).show()
-                    val editor = prefs.edit()
-                    editor.putBoolean("isToastShown", true)
-                    editor.apply()
-                }
-                supportFragmentManager.popBackStack()
+                finish()
             }
-        } else if (supportFragmentManager.backStackEntryCount == 1) {
-            val animLeftOut: Animation = AnimationUtils.loadAnimation(this, R.anim.left_out)
-            binding.mallwebHomeContainer.startAnimation(animLeftOut)
-            animLeftOut.setAnimationListener(object: AnimationListener{
-                override fun onAnimationStart(animation: Animation?) {}
-                override fun onAnimationEnd(animation: Animation?) { supportFragmentManager.popBackStack() }
-                override fun onAnimationRepeat(animation: Animation?) {}
-            })
-            allVisible()
-        } else {
-            finish()
         }
     }
 
