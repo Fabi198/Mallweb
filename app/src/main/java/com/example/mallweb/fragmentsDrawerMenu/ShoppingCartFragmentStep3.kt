@@ -118,6 +118,27 @@ class ShoppingCartFragmentStep3: Fragment(R.layout.fragment_shopping_cart_step3)
         if (numPayment == 1 || numPayment == 2) { dbMallweb.editTotalOrder(order.numOrder, order.total - ((order.total/100)*5)) }
         dbMallweb.editStateOrder(order.numOrder, getString(R.string.completado))
         dbMallweb.editPayMethodOrder(order.numOrder, numPayment)
-        refresh(requireActivity(), requireContext())
+        val builder = AlertDialog.Builder(requireContext())
+        builder.setTitle("ORDEN CONFIRMADA - N°${order.numOrder}")
+        when (numPayment) {
+            1 -> { builder.setMessage("Revise su casilla de mail\nLo esperamos para el retiro de su compra") }
+            2 -> {
+                if (binding.cvCashAtLocalPayment.visibility == View.VISIBLE) {
+                    builder.setMessage("Revise su casilla de mail\nPor favor, recuerde responder con el comprobante de transferencia")
+                } else {
+                    builder.setMessage("Revise su casilla de mail\nEl envío se despachara una vez recibido el comprobante de transferencia")
+                }
+            }
+            3 -> {
+                if (binding.cvCashAtLocalPayment.visibility == View.VISIBLE) {
+                    builder.setMessage("Revise su casilla de mail\nPor favor, recuerde responder con el comprobante de Mercado Pago")
+                } else {
+                    builder.setMessage("Revise su casilla de mail\nEl envío se despachara una vez recibido el comprobante de Mercado Pago")
+                }
+            }
+        }
+        builder.setPositiveButton("Volver al inicio"){ _, _ -> refresh(requireActivity(), requireContext()) }
+        val dialog: AlertDialog = builder.create()
+        dialog.show()
     }
 }
