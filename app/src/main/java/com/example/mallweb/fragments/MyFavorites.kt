@@ -2,15 +2,15 @@ package com.example.mallweb.fragments
 
 import android.content.SharedPreferences
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
+import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.mallweb.R
-import com.example.mallweb.databinding.FragmentMyFavoritesBinding
 import com.example.mallweb.adapters.FavoritesAdapter
+import com.example.mallweb.databinding.FragmentMyFavoritesBinding
 import com.example.mallweb.db.DbMallweb
-import com.example.mallweb.fragments.ShowFragment.showFragmentFromFragment
+import com.example.mallweb.objects.ShowFragment.showFragmentFromFragment
 
 
 class MyFavorites : Fragment(R.layout.fragment_my_favorites) {

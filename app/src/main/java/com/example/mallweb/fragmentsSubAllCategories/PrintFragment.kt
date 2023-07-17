@@ -1,18 +1,17 @@
 package com.example.mallweb.fragmentsSubAllCategories
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.View
+import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.mallweb.R
-import com.example.mallweb.databinding.FragmentPrintBinding
 import com.example.mallweb.adapters.CategoryAdapterShow10ProductsForEachSubCategory
-import com.example.mallweb.fragments.SubCategoryFragment
+import com.example.mallweb.databinding.FragmentPrintBinding
 import com.example.mallweb.fragments.ProductDetailFragment
-import com.example.mallweb.fragments.ShowFragment.showFragmentFromFragment
+import com.example.mallweb.fragments.SubCategoryFragment
 import com.example.mallweb.objects.Session.getUserID
 import com.example.mallweb.objects.Session.sessionFromFragment
-import java.util.ArrayList
+import com.example.mallweb.objects.ShowFragment.showFragmentFromFragment
 
 
 class PrintFragment : Fragment(R.layout.fragment_print) {

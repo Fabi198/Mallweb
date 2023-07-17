@@ -9,15 +9,15 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.mallweb.R
-import com.example.mallweb.databinding.FragmentShoppingCartStep1Binding
 import com.example.mallweb.adapters.CartItemAdapter
 import com.example.mallweb.alarms.AlarmAbbandonedOrder.setFirstAlarm
+import com.example.mallweb.databinding.FragmentShoppingCartStep1Binding
 import com.example.mallweb.db.DbMallweb
 import com.example.mallweb.entities.dbEntities.ShopCartItem
 import com.example.mallweb.fragments.ProductDetailFragment
-import com.example.mallweb.fragments.ShowFragment.showFragmentFromFragment
 import com.example.mallweb.objects.Session.getUserID
 import com.example.mallweb.objects.ShoppingCartQuantity.setShoppingCartSize
+import com.example.mallweb.objects.ShowFragment.showFragmentFromFragment
 import java.text.SimpleDateFormat
 import java.util.*
 

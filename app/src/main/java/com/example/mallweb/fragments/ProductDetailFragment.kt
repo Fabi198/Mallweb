@@ -9,14 +9,14 @@ import android.os.Bundle
 import android.view.View
 import androidx.fragment.app.Fragment
 import com.example.mallweb.R
-import com.example.mallweb.databinding.FragmentProductDetailBinding
 import com.example.mallweb.auth.AuthFragment
+import com.example.mallweb.databinding.FragmentProductDetailBinding
 import com.example.mallweb.db.DbMallweb
-import com.example.mallweb.fragments.ShowFragment.showFragmentFromFragment
 import com.example.mallweb.fragmentsDrawerMenu.ShoppingCartFragmentStep1
 import com.example.mallweb.objects.Session.getUserID
 import com.example.mallweb.objects.Session.sessionFromFragment
 import com.example.mallweb.objects.ShoppingCartQuantity.setShoppingCartSize
+import com.example.mallweb.objects.ShowFragment.showFragmentFromFragment
 import com.squareup.picasso.Picasso
 
 

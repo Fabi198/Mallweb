@@ -138,6 +138,7 @@ class ShoppingCartFragmentStep3: Fragment(R.layout.fragment_shopping_cart_step3)
             }
         }
         builder.setPositiveButton("Volver al inicio"){ _, _ -> refresh(requireActivity(), requireContext()) }
+        builder.setOnCancelListener { refresh(requireActivity(), requireContext()) }
         val dialog: AlertDialog = builder.create()
         dialog.show()
     }
